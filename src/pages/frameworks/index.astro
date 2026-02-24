@@ -1,0 +1,52 @@
+
+
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const frameworks = (await getCollection("frameworks"))
+  .filter((f) => !f.data.draft)
+  .sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999));
+---
+
+<BaseLayout
+  title="Frameworks — Wychwood Partners"
+  description="Operating frameworks for execution discipline."
+>
+  <main class="mx-auto max-w-6xl px-6 py-14">
+    <header class="max-w-3xl">
+      <h1 class="text-4xl font-semibold tracking-tight">Frameworks</h1>
+      <p class="mt-4 text-lg text-slate-600">
+        The core operating systems we install—written plainly so you can apply them.
+      </p>
+    </header>
+
+    {frameworks.length === 0 ? (
+      <div class="mt-10 rounded-2xl border bg-slate-50 p-6">
+        <p class="text-sm font-semibold">No frameworks found yet</p>
+        <p class="mt-2 text-sm text-slate-600">
+          Add MDX files to <code>src/content/frameworks</code> with frontmatter: <code>title</code>,
+          <code>description</code>, <code>publishDate</code>.
+        </p>
+      </div>
+    ) : (
+      <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+        {frameworks.map((f) => (
+          <a
+            href={`/frameworks/${f.slug}/`}
+            class="group rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md"
+          >
+            <p class="text-xs font-medium text-slate-500">
+              {f.data.frameworkName ?? "Framework"}
+            </p>
+            <p class="mt-2 text-lg font-semibold">{f.data.title}</p>
+            <p class="mt-2 text-sm text-slate-600">{f.data.description}</p>
+            <p class="mt-4 text-sm font-medium text-slate-900 group-hover:underline">
+              Read →
+            </p>
+          </a>
+        ))}
+      </div>
+    )}
+  </main>
+</BaseLayout>

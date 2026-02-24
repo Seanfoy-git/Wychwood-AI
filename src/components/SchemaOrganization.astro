@@ -1,0 +1,22 @@
+---
+import { SITE } from '../lib/site';
+
+type Props = {
+  name?: string;
+  url?: string;
+  logoUrl?: string;
+};
+
+const { name = SITE.name, url = SITE.url, logoUrl } = Astro.props as Props;
+
+const data: any = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name,
+  url,
+};
+
+if (logoUrl) data.logo = logoUrl;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(data)} />

@@ -1,0 +1,42 @@
+---
+import { SITE } from '../lib/site';
+
+type Props = {
+  title: string;
+  description: string;
+  canonicalPath?: string; // e.g. "/insights/my-post/"
+  ogType?: 'website' | 'article';
+  ogImagePath?: string; // e.g. "/og/default.png"
+  noIndex?: boolean;
+};
+
+const {
+  title,
+  description,
+  canonicalPath = Astro.url.pathname,
+  ogType = 'website',
+  ogImagePath = '/og/default.png',
+  noIndex = false,
+} = Astro.props as Props;
+
+const canonicalUrl = new URL(canonicalPath, SITE.url).toString();
+const ogImageUrl = new URL(ogImagePath, SITE.url).toString();
+---
+
+<link rel="canonical" href={canonicalUrl} />
+
+<meta name="description" content={description} />
+{noIndex && <meta name="robots" content="noindex,nofollow" />}
+
+<meta property="og:site_name" content={SITE.name} />
+<meta property="og:type" content={ogType} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:image" content={ogImageUrl} />
+
+<meta name="twitter:card" content="summary_large_image" />
+{SITE.twitter && <meta name="twitter:site" content={SITE.twitter} />}
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageUrl} />

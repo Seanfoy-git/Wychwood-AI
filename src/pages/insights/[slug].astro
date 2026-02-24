@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SchemaArticle from '../../components/SchemaArticle.astro';
+import { getCollection, getEntryBySlug } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('insights');
+  return posts.filter(p => !p.data.draft).map((p) => ({ params: { slug: p.slug } }));
+}
+
+const { slug } = Astro.params;
+const post = await getEntryBySlug('insights', slug!);
+if (!post) throw new Error(`Insight not found: ${slug}`);
+
+const { Content } = await post.render();
+const path = `/insights/${post.slug}/`;
+---
+
+<BaseLayout
+  title={`${post.data.title} — Wychwood Partners`}
+  description={post.data.description}
+  canonicalPath={path}
+  ogType="article"
+>
+  <SchemaArticle
+    headline={post.data.title}
+    description={post.data.description}
+    urlPath={path}
+    datePublished={post.data.publishDate}
+    dateModified={post.data.updatedDate}
+    authorName={post.data.author}
+  />
+
+  <main class="mx-auto max-w-3xl px-6 py-14">
+    <p class="text-xs font-medium text-slate-500">
+      {post.data.publishDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}
+    </p>
+    <h1 class="mt-3 text-4xl font-semibold tracking-tight">{post.data.title}</h1>
+    <p class="mt-4 text-lg text-slate-600">{post.data.description}</p>
+
+    <article class="prose prose-slate mt-10 max-w-none">
+      <Content />
+    </article>
+  </main>
+</BaseLayout>

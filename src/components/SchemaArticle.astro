@@ -1,0 +1,35 @@
+---
+import { SITE } from '../lib/site';
+
+type Props = {
+  headline: string;
+  description: string;
+  urlPath: string;
+  datePublished: Date;
+  dateModified?: Date;
+  authorName?: string;
+};
+
+const {
+  headline,
+  description,
+  urlPath,
+  datePublished,
+  dateModified,
+  authorName = SITE.name,
+} = Astro.props as Props;
+
+const data = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline,
+  description,
+  mainEntityOfPage: new URL(urlPath, SITE.url).toString(),
+  datePublished: datePublished.toISOString(),
+  ...(dateModified ? { dateModified: dateModified.toISOString() } : {}),
+  author: { "@type": "Organization", name: authorName },
+  publisher: { "@type": "Organization", name: SITE.name },
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(data)} />
