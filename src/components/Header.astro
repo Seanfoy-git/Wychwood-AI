@@ -1,13 +1,5 @@
 ---
-const nav = [
-  { href: '/services', label: 'Services' },
-  { href: '/case-studies', label: 'Case Studies' },
-  { href: '/frameworks', label: 'Frameworks' },
-  { href: '/insights', label: 'Insights' },
-  { href: '/about', label: 'About' },
-];
 ---
-
 <header class="sticky top-0 z-50 border-b bg-white/80 backdrop-blur">
   <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
     <a href="/" class="flex items-center gap-2 font-semibold tracking-tight">
@@ -15,28 +7,17 @@ const nav = [
       <span>Wychwood Partners</span>
     </a>
 
-    <!-- Show nav on ALL screen sizes for now -->
     <nav class="flex items-center gap-4 text-sm text-slate-700">
-      {nav.map((item) => (
-        <a href={item.href} class="hover:text-slate-900">
-          {item.label}
-        </a>
-      ))}
+      <a href="/services" class="hover:text-slate-900">Services</a>
+      <a href="/case-studies" class="hover:text-slate-900">Case Studies</a>
+      <a href="/frameworks" class="hover:text-slate-900">Frameworks</a>
+      <a href="/insights" class="hover:text-slate-900">Insights</a>
+      <a href="/about" class="hover:text-slate-900">About</a>
     </nav>
 
     <div class="flex items-center gap-3">
-      <a
-        href="/contact"
-        class="rounded-xl border px-4 py-2 text-sm font-medium text-slate-800 hover:bg-slate-50"
-      >
-        Contact
-      </a>
-      <a
-        href="/contact"
-        class="rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800"
-      >
-        Book a call
-      </a>
+      <a href="/contact" class="rounded-xl border px-4 py-2 text-sm font-medium text-slate-800 hover:bg-slate-50">Contact</a>
+      <a href="/contact" class="rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800">Book a call</a>
     </div>
   </div>
 </header>

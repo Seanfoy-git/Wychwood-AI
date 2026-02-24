@@ -4,9 +4,12 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getCollection } from "astro:content";
 
-const frameworks = (await getCollection("frameworks"))
+const frameworksAll = (await getCollection("frameworks"))
   .filter((f) => !f.data.draft)
   .sort((a, b) => (a.data.order ?? 999) - (b.data.order ?? 999));
+
+// Safety: de-dupe in case two entries end up with the same effective slug/title.
+const frameworks = Array.from(new Map(frameworksAll.map((f) => [f.slug, f])).values());
 ---
 
 <BaseLayout
