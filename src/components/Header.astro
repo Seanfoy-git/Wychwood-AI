@@ -1,11 +1,32 @@
-<a
-  href="/insights/execution-discipline/"
-  class="group rounded-[var(--radius-xl)] border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] p-6 shadow-sm transition hover:shadow-md"
->
-  <!-- existing content -->
-</a>
+---
+---
+<header class="sticky top-0 z-50 border-b border-[rgb(var(--border))] bg-[rgb(var(--surface))/0.9] backdrop-blur supports-[backdrop-filter]:bg-[rgb(var(--surface))/0.82]">
+  <div class="shell flex items-center justify-between py-4">
+    <a href="/" class="inline-flex items-center tracking-tight">
+      <span class="brandmark text-lg font-semibold text-[rgb(var(--text))]">Wychwood Partners</span>
+    </a>
 
-<div class="rounded-[var(--radius-xl)] border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] p-6 shadow-sm">
-  Publishing cadence
-  <!-- existing content -->
-</div>
+    <nav class="hidden items-center gap-5 text-[13px] text-[rgb(var(--text-muted))] md:flex" aria-label="Primary">
+      <a href="/services" class="transition hover:text-[rgb(var(--text))]">Services</a>
+      <a href="/case-studies" class="transition hover:text-[rgb(var(--text))]">Case Studies</a>
+      <a href="/frameworks" class="transition hover:text-[rgb(var(--text))]">Frameworks</a>
+      <a href="/insights" class="transition hover:text-[rgb(var(--text))]">Insights</a>
+      <a href="/about" class="transition hover:text-[rgb(var(--text))]">About</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a
+        href="/contact"
+        class="hidden rounded-[var(--radius-lg)] border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] px-4 py-2 text-sm font-medium text-[rgb(var(--text))] transition hover:bg-[rgb(var(--surface-subtle))] md:inline-flex"
+      >
+        Contact
+      </a>
+      <a
+        href="/contact"
+        class="inline-flex rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-4 py-2 text-sm font-medium text-white transition hover:opacity-95"
+      >
+        Book a call
+      </a>
+    </div>
+  </div>
+</header>

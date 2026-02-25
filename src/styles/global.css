@@ -51,6 +51,42 @@
     letter-spacing: -0.02em;
   }
 
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans);
+    letter-spacing: -0.01em;
+  }
+
+  /* Type scale + hierarchy */
+  h1 {
+    @apply text-4xl md:text-6xl font-semibold tracking-tight;
+  }
+
+  h2 {
+    @apply text-2xl md:text-3xl font-semibold tracking-tight;
+  }
+
+  h3 {
+    @apply text-xl font-semibold;
+  }
+
+  h4 {
+    @apply text-lg font-semibold;
+  }
+
+  h5 {
+    @apply text-base font-semibold;
+  }
+
+  h6 {
+    @apply text-sm font-semibold;
+  }
+
+  p {
+    @apply leading-relaxed;
+  }
+
   ::selection {
     background: rgba(var(--brand-accent), 0.18);
   }
