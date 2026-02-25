@@ -1,1 +1,105 @@
 @import "tailwindcss";
+
+/* Visual identity foundation (Tailwind v4 CSS-first) */
+
+@layer base {
+  :root {
+    /* Typography */
+    --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial,
+      "Noto Sans", "Liberation Sans", sans-serif;
+    --font-serif: "IBM Plex Serif", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+    /* Brand */
+    --brand-anchor: 15 23 42;
+    --brand-accent: 37 99 235;
+
+    /* Surfaces */
+    --surface: 250 250 249;
+    --surface-elevated: 255 255 255;
+    --surface-subtle: 245 245 244;
+
+    /* Borders */
+    --border: 226 232 240;
+
+    /* Text */
+    --text: 15 23 42;
+    --text-muted: 71 85 105;
+
+    /* Radius */
+    --radius-lg: 16px;
+    --radius-xl: 20px;
+  }
+
+  html {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: rgb(var(--surface));
+    color: rgb(var(--text));
+    font-family: var(--font-sans);
+    line-height: 1.55;
+    letter-spacing: -0.01em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: rgba(var(--brand-accent), 0.18);
+  }
+
+  a {
+    text-underline-offset: 0.18em;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply mx-auto max-w-6xl px-6;
+  }
+
+  .section {
+    @apply py-16;
+  }
+
+  .section-sm {
+    @apply py-10;
+  }
+
+  .kicker {
+    @apply text-xs font-medium tracking-wide uppercase;
+    color: rgb(var(--text-muted));
+  }
+
+  .brandmark {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+
+  .card {
+    @apply shadow-sm;
+    border: 1px solid rgb(var(--border));
+    background: rgb(var(--surface-elevated));
+    border-radius: var(--radius-xl);
+  }
+
+  .card-muted {
+    border: 1px solid rgb(var(--border));
+    background: rgb(var(--surface-subtle));
+    border-radius: var(--radius-xl);
+  }
+
+  .grid-surface {
+    background-image:
+      linear-gradient(to right, rgba(var(--brand-anchor), 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(var(--brand-anchor), 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+}

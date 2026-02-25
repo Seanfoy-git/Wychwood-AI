@@ -9,41 +9,47 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <main>
     <!-- Hero -->
     <section class="relative overflow-hidden">
-      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-slate-50 to-white"></div>
-      <div class="mx-auto max-w-6xl px-6 py-16 md:py-20">
+      <div class="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(var(--brand-accent),0.08)_0%,rgba(var(--surface),1)_55%)]"></div>
+      <div class="shell section">
         <div class="max-w-3xl">
-          <p class="inline-flex items-center gap-2 rounded-full border bg-white px-3 py-1 text-xs text-slate-600 shadow-sm">
-            <span class="h-1.5 w-1.5 rounded-full bg-slate-900"></span>
+          <p class="inline-flex items-center gap-2 rounded-full border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] px-3 py-1 text-xs text-[rgb(var(--text-muted))] shadow-sm">
+            <span class="h-1.5 w-1.5 rounded-full bg-[rgb(var(--brand-anchor))]"></span>
             Fractional • Interim • Full-time COO support
           </p>
-          <h1 class="mt-5 text-4xl font-semibold tracking-tight text-slate-900 md:text-6xl">
+          <h1 class="mt-5 text-4xl font-semibold tracking-tight text-[rgb(var(--text))] md:text-6xl">
             Execution discipline for scaling companies.
           </h1>
-          <p class="mt-5 text-lg leading-relaxed text-slate-600 md:text-xl">
+          <p class="mt-5 text-lg leading-relaxed text-[rgb(var(--text-muted))] md:text-xl">
             Wychwood Partners installs operating systems, forecasting frameworks, and leadership cadence so growth-stage and PE-backed businesses can scale with clarity, accountability, and predictable outcomes.
           </p>
 
           <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="/contact" class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-medium text-white hover:bg-slate-800">
+            <a
+              href="/contact"
+              class="inline-flex items-center justify-center rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-5 py-3 text-sm font-medium text-white transition hover:opacity-95"
+            >
               Book a call
             </a>
-            <a href="/services" class="inline-flex items-center justify-center rounded-xl border px-5 py-3 text-sm font-medium text-slate-800 hover:bg-slate-50">
+            <a
+              href="/services"
+              class="inline-flex items-center justify-center rounded-[var(--radius-lg)] border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] px-5 py-3 text-sm font-medium text-[rgb(var(--text))] transition hover:bg-[rgb(var(--surface-subtle))]"
+            >
               See how we work
             </a>
           </div>
 
           <div class="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-3">
-            <div class="rounded-2xl border bg-white p-4 shadow-sm">
+            <div class="card p-4">
               <p class="text-sm font-semibold">Operating system</p>
-              <p class="mt-1 text-sm text-slate-600">Roles, rhythms, metrics, and accountability.</p>
+              <p class="mt-1 text-sm text-[rgb(var(--text-muted))]">Roles, rhythms, metrics, and accountability.</p>
             </div>
-            <div class="rounded-2xl border bg-white p-4 shadow-sm">
+            <div class="card p-4">
               <p class="text-sm font-semibold">Forecasting discipline</p>
-              <p class="mt-1 text-sm text-slate-600">Visibility, confidence, and decision velocity.</p>
+              <p class="mt-1 text-sm text-[rgb(var(--text-muted))]">Visibility, confidence, and decision velocity.</p>
             </div>
-            <div class="rounded-2xl border bg-white p-4 shadow-sm">
+            <div class="card p-4">
               <p class="text-sm font-semibold">Leadership cadence</p>
-              <p class="mt-1 text-sm text-slate-600">Weekly execution rhythm that sticks.</p>
+              <p class="mt-1 text-sm text-[rgb(var(--text-muted))]">Weekly execution rhythm that sticks.</p>
             </div>
           </div>
         </div>
@@ -51,70 +57,70 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </section>
 
     <!-- Services -->
-    <section class="border-t">
-      <div class="mx-auto max-w-6xl px-6 py-14">
+    <section class="border-t border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))]">
+      <div class="shell section-sm">
         <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div class="max-w-2xl">
             <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">What we install</h2>
-            <p class="mt-2 text-slate-600">
+            <p class="mt-2 text-[rgb(var(--text-muted))]">
               Clear operating mechanics that turn strategy into execution—without adding bureaucracy.
             </p>
           </div>
-          <a href="/services" class="text-sm font-medium text-slate-900 hover:underline">View services</a>
+          <a href="/services" class="text-sm font-medium text-[rgb(var(--text))] hover:underline">View services</a>
         </div>
 
         <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
-          <a href="/services/operational-systems" class="group rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md">
+          <a href="/services/operational-systems" class="group card p-6 transition hover:shadow-md">
             <p class="text-sm font-semibold">Operational systems</p>
-            <p class="mt-2 text-sm text-slate-600">
+            <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">
               Operating model, metrics, roles, decision rights, and execution routines.
             </p>
-            <p class="mt-4 text-sm font-medium text-slate-900 group-hover:underline">Learn more →</p>
+            <p class="mt-4 text-sm font-medium text-[rgb(var(--text))] group-hover:underline">Learn more →</p>
           </a>
 
-          <a href="/services/forecasting-frameworks" class="group rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md">
+          <a href="/services/forecasting-frameworks" class="group card p-6 transition hover:shadow-md">
             <p class="text-sm font-semibold">Forecasting frameworks</p>
-            <p class="mt-2 text-sm text-slate-600">
+            <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">
               Driver-based forecasting, pipeline confidence, and scenario planning.
             </p>
-            <p class="mt-4 text-sm font-medium text-slate-900 group-hover:underline">Learn more →</p>
+            <p class="mt-4 text-sm font-medium text-[rgb(var(--text))] group-hover:underline">Learn more →</p>
           </a>
 
-          <a href="/services/leadership-cadence" class="group rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md">
+          <a href="/services/leadership-cadence" class="group card p-6 transition hover:shadow-md">
             <p class="text-sm font-semibold">Leadership cadence</p>
-            <p class="mt-2 text-sm text-slate-600">
+            <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">
               Weekly rhythm, accountability loops, and leadership team performance.
             </p>
-            <p class="mt-4 text-sm font-medium text-slate-900 group-hover:underline">Learn more →</p>
+            <p class="mt-4 text-sm font-medium text-[rgb(var(--text))] group-hover:underline">Learn more →</p>
           </a>
         </div>
       </div>
     </section>
 
     <!-- Insights -->
-    <section class="border-t">
-      <div class="mx-auto max-w-6xl px-6 py-14">
+    <section class="border-t border-[rgb(var(--border))]">
+      <div class="shell section-sm">
         <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>
             <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Insights</h2>
-            <p class="mt-2 text-slate-600">Frameworks and practical notes on scaling execution.</p>
+            <p class="mt-2 text-[rgb(var(--text-muted))]">Frameworks and practical notes on scaling execution.</p>
           </div>
-          <a href="/insights" class="text-sm font-medium text-slate-900 hover:underline">View all insights</a>
+          <a href="/insights" class="text-sm font-medium text-[rgb(var(--text))] hover:underline">View all insights</a>
         </div>
 
         <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2">
-          <a href="/insights/execution-discipline/" class="group rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md">
-            <p class="text-xs font-medium text-slate-500">Featured</p>
+          <a href="/insights/execution-discipline/" class="group card p-6 transition hover:shadow-md">
+            <p class="text-xs font-medium text-[rgb(var(--text-muted))]">Featured</p>
             <p class="mt-2 text-lg font-semibold">Execution discipline: the missing operating layer</p>
-            <p class="mt-2 text-sm text-slate-600">
+            <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">
               Scaling fails when strategy outruns operating mechanics. Here’s the minimal layer that makes execution predictable.
             </p>
-            <p class="mt-4 text-sm font-medium text-slate-900 group-hover:underline">Read →</p>
+            <p class="mt-4 text-sm font-medium text-[rgb(var(--text))] group-hover:underline">Read →</p>
           </a>
 
-          <div class="rounded-2xl border bg-slate-50 p-6">
+          <div class="card p-6">
             <p class="text-sm font-semibold">Publishing cadence</p>
-            <p class="mt-2 text-sm text-slate-600">
+            <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">
               Keep this updated with short, structured posts you can share with CEOs and investors.
             </p>
           </div>
