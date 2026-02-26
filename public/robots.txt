@@ -10,4 +10,4 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
-Sitemap: https://wychwood-partners.com/sitemap.xml
+Sitemap: https://wychwood-partners.com/sitemap-0.xml
