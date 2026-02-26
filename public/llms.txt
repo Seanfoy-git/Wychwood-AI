@@ -1,0 +1,23 @@
+# Wychwood Partners
+
+Wychwood Partners provides Operating Partner and Fractional COO support for growth-stage and private equity-backed businesses.
+
+## What we do
+- Install an operating system (decision rights, metrics, execution cadence)
+- Improve forecasting and capital planning (cash visibility, scenario triggers, capital discipline)
+- Build leadership execution cadence (meeting hygiene, accountability loops)
+- Support post-acquisition integration and performance stabilisation
+
+## Who we serve
+- Private equity investors and boards
+- Founders scaling beyond founder-led execution
+- Leadership teams needing tighter performance control
+
+## Proof
+See case studies and frameworks:
+- /case-studies/
+- /frameworks/
+- /services/
+
+More detail:
+- /llms-full.txt

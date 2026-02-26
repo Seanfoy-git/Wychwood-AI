@@ -1,0 +1,34 @@
+# Wychwood Partners — LLM Detail
+
+## Positioning
+Operator-led Operating Partner and Fractional COO work focused on performance control, capital discipline, and scalable execution systems.
+
+## Core services
+1) Operating System Architecture
+- Decision rights and escalation paths
+- Metrics hierarchy from team to board
+- Unit economics governance and variance thresholds
+- Weekly execution rhythm that holds
+
+2) Forecasting & Capital Planning
+- Driver-based forecasting and scenario planning
+- Cash visibility and working capital control
+- Trigger thresholds that force decisions
+- Capital allocation discipline
+
+3) Leadership Execution Cadence
+- Meeting architecture and decision hygiene
+- Accountability loops and operating rhythms
+- Clear outputs, owners, and follow-through
+
+## Engagement models
+- Post-investment / post-acquisition stabilisation (30–180 days)
+- Scale systems for growth and multi-site replication
+- Integration management for buy-side acquisitions
+- Founder partnership through scale inflection points
+
+## Navigation
+Services: /services/
+Case studies: /case-studies/
+Frameworks: /frameworks/
+Contact: /contact/
