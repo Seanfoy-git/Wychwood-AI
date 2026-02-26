@@ -55,7 +55,13 @@ const data: any = {
   ]
 };
 
-if (logoUrl) data.logo = logoUrl;
+if (logoUrl) {
+  const orgNode = data["@graph"].find((n: any) => n["@id"] === orgId);
+  if (orgNode) {
+    orgNode.logo = logoUrl;
+    orgNode.image = logoUrl;
+  }
+}
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(data)} />
+<script type="application/ld+json" set:html={JSON.stringify(data)}></script>
