@@ -2,26 +2,92 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title="About — Wychwood Partners" description="Operator-led execution discipline for scaling companies.">
-  <main class="mx-auto max-w-6xl px-6 py-14">
-    <h1 class="text-4xl font-semibold tracking-tight">About</h1>
-    <p class="mt-4 max-w-3xl text-slate-600">
-      Wychwood Partners helps scaling businesses turn complexity into disciplined execution—installing operating systems, forecasting frameworks, and leadership cadence.
+  <main class="shell py-14">
+    <h1>About</h1>
+    <p class="mt-3 max-w-3xl text-lg text-[rgb(var(--text-muted))]">
+      Operating Partner & Fractional COO work for PE-backed and scaling businesses.
+    </p>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://wychwood-partners.com/#sean-foy",
+        "name": "Sean Foy",
+        "jobTitle": "Operating Partner and Fractional COO",
+        "url": "https://wychwood-partners.com/about/",
+        "description": "Operating Partner and Fractional COO focused on performance control, capital discipline, and scalable execution systems.",
+        "worksFor": {
+          "@type": "ProfessionalService",
+          "@id": "https://wychwood-partners.com/#organisation"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/sean-foy/"
+        ],
+        "knowsAbout": [
+          "Private equity portfolio operations",
+          "Growth-stage operating systems",
+          "Unit economics modelling",
+          "Working capital management",
+          "Post-merger integration",
+          "Multi-country supply chain expansion",
+          "Leadership execution cadence"
+        ]
+      }
+    </script>
+
+    <p class="mt-4 max-w-3xl text-[rgb(var(--text-muted))]">
+      Wychwood Partners is led by Sean Foy, an operator who has built and stabilised growth-stage and private equity-backed businesses across consumer technology, e-commerce, logistics, and asset-heavy multi-site platforms.
+    </p>
+    <p class="mt-4 max-w-3xl text-[rgb(var(--text-muted))]">
+      He is typically hired by private equity partners, boards, and founders when growth is outrunning control or performance needs to tighten.
     </p>
 
-    <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
-      <div class="rounded-2xl border bg-white p-6 shadow-sm md:col-span-2">
-        <p class="text-sm font-semibold">Operator profile</p>
-        <p class="mt-2 text-sm text-slate-600">
-          Add a concise bio here: stages, sectors, transformations led, and 2–3 quantified outcomes. This becomes a high-signal block for investors and AI discovery.
+    <p class="mt-4 max-w-3xl text-[rgb(var(--text-muted))]">
+      His work sits at the point where growth meets constraint — margin drift, working capital pressure, post-acquisition integration, or founder-led execution that no longer scales. The focus is consistent: make the numbers reliable, define decision rights, and install a rhythm that holds under pressure.
+    </p>
+
+    <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+      <div class="card p-6 md:col-span-2">
+        <h2 class="text-sm font-semibold">Operating track record</h2>
+
+        <p class="mt-4 text-sm text-[rgb(var(--text-muted))]">
+          At Amazon Devices, Sean was the first non‑US executive in the organisation, responsible for building the Rest‑of‑World supply chain from zero to 17 countries across Europe, the Middle East, and Asia. The platform scaled into multi‑billion‑dollar revenue under a disciplined international operating model.
+        </p>
+
+        <p class="mt-4 text-sm text-[rgb(var(--text-muted))]">
+          At Shift Technologies, he helped scale an asset‑heavy, multi‑state automotive platform from approximately $85m to over $700m in revenue through to IPO, installing site‑level margin control, inventory discipline, and operating governance across eight facilities in four states.
+        </p>
+
+        <p class="mt-4 text-sm text-[rgb(var(--text-muted))]">
+          At Enjoy Technology, he built and scaled a same‑day field operations platform to 51 US cities with a UK launch, designing a mobile inventory system and negotiating a multi‑million‑dollar consignment structure to protect working capital while expanding nationally.
+        </p>
+
+        <p class="mt-4 text-sm text-[rgb(var(--text-muted))]">
+          Across venture, private equity, and public market environments, the common thread has been performance control — unit economics, cash visibility, integration discipline, and leadership cadence that converts strategy into repeatable execution.
         </p>
       </div>
-      <div class="rounded-2xl border bg-slate-50 p-6">
-        <p class="text-sm font-semibold">Engagements</p>
-        <ul class="mt-3 space-y-2 text-sm text-slate-600">
-          <li>• Fractional / Interim COO</li>
-          <li>• Full-time COO</li>
-          <li>• PE operating support</li>
+
+      <div class="card-muted p-6">
+        <h2 class="text-sm font-semibold">Engagement focus</h2>
+        <ul class="mt-4 space-y-3 text-sm text-[rgb(var(--text-muted))]">
+          <li>Fractional or interim COO support during stabilisation or scale inflection, restoring control of performance and clarity of ownership.</li>
+          <li>Operating Partner involvement across the PE hold period, strengthening visibility, cadence, integration, and capital discipline.</li>
+          <li>Post-acquisition integration and structured synergy realisation across buy-side transactions.</li>
+          <li>Founder partnership through structural growth transition, translating vision into a scalable way the business runs.</li>
         </ul>
+
+        <p class="mt-6 text-sm text-[rgb(var(--text-muted))]">
+          Sean is a Chartered Director (CDir) with experience operating across venture‑backed growth, private equity ownership, and IPO environments.
+        </p>
+      </div>
+    </div>
+
+    <div class="mt-16 border-t border-[rgb(var(--border))] pt-8">
+      <p class="text-sm font-semibold">Explore further</p>
+      <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:gap-6 text-sm">
+        <a href="/services" class="text-[rgb(var(--text))] hover:underline">View services</a>
+        <a href="/case-studies" class="text-[rgb(var(--text))] hover:underline">Read case studies</a>
+        <a href="/frameworks" class="text-[rgb(var(--text))] hover:underline">Explore frameworks</a>
       </div>
     </div>
   </main>

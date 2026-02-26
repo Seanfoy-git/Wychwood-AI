@@ -2,21 +2,34 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 <BaseLayout title="Contact — Wychwood Partners" description="Book a call to pressure-test execution discipline.">
-  <main class="mx-auto max-w-6xl px-6 py-14">
-    <h1 class="text-4xl font-semibold tracking-tight">Contact</h1>
-    <p class="mt-4 max-w-2xl text-slate-600">
-      Send a note with context (stage, urgency, constraints) and we’ll propose the most useful next step.
+  <main class="shell py-14">
+    <h1>Book a call</h1>
+
+    <p class="mt-4 max-w-3xl text-[rgb(var(--text-muted))]">
+      If you’re a founder, investor, or board member dealing with margin drift, weak cash visibility, stalled integration, or growth that feels less controlled than it should, send context and we’ll decide whether a conversation makes sense.
+    </p>
+
+    <p class="mt-4 max-w-3xl text-[rgb(var(--text-muted))]">
+      Include stage, ownership structure, urgency, and the specific constraint you’re trying to resolve. If it’s a fit, we’ll schedule a call. If it isn’t, I’ll say so.
     </p>
 
     <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
-      <div class="rounded-2xl border bg-white p-6 shadow-sm">
+      <div class="card p-6">
         <p class="text-sm font-semibold">Email</p>
-        <p class="mt-2 text-sm text-slate-600">Add: hello@wychwood-partners.com</p>
+        <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">
+          hello@wychwood-partners.com
+        </p>
       </div>
-      <div class="rounded-2xl border bg-white p-6 shadow-sm">
-        <p class="text-sm font-semibold">Calendar</p>
-        <p class="mt-2 text-sm text-slate-600">We’ll wire in a booking link (Calendly/TidyCal) next.</p>
+
+      <div class="card p-6">
+        <p class="text-sm font-semibold">Direct booking</p>
+        <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">
+          A calendar link will sit here. Use it if you already know a call is the right next step.
+        </p>
       </div>
     </div>
+    <p class="mt-12 max-w-3xl text-sm text-[rgb(var(--text-muted))]">
+      Experience across venture-backed growth, private equity hold periods, multi-country scale, and IPO environments.
+    </p>
   </main>
 </BaseLayout>

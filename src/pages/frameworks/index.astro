@@ -12,19 +12,19 @@ const frameworks = Array.from(new Map(frameworksAll.map((f) => [f.slug, f])).val
 
 <BaseLayout
   title="Frameworks — Wychwood Partners"
-  description="Operating frameworks for execution discipline."
+  description="The three operating layers: Operating, Capital & Forecasting, and Leadership Cadence."
 >
   <main class="shell py-14">
     <header class="max-w-3xl">
       <h1>Frameworks</h1>
       <p class="mt-4 text-lg text-[rgb(var(--text-muted))]">
-        The core operating systems we install—written plainly so you can apply them.
+        The three operating layers we use to create control — written plainly so you can apply them.
       </p>
     </header>
 
     {frameworks.length === 0 ? (
       <div class="mt-10 card p-6">
-        <p class="text-sm font-semibold">No frameworks found yet</p>
+        <p class="text-sm font-semibold">No layers found yet</p>
         <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">
           Add MDX files to <code>src/content/frameworks</code> with frontmatter: <code>title</code>,
           <code>description</code>, <code>publishDate</code>.
@@ -38,7 +38,7 @@ const frameworks = Array.from(new Map(frameworksAll.map((f) => [f.slug, f])).val
             class="group card p-6 transition hover:shadow-md"
           >
             <p class="text-xs font-medium text-[rgb(var(--text-muted))]">
-              {f.data.frameworkName ?? "Framework"}
+              {f.data.frameworkName ?? "Operating Layer"}
             </p>
             <p class="mt-2 text-lg font-semibold">{f.data.title}</p>
             <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">{f.data.description}</p>

@@ -9,11 +9,50 @@ type Props = {
 
 const { name = SITE.name, url = SITE.url, logoUrl } = Astro.props as Props;
 
+const orgId = `${url}#org`;
+const personId = `${url}#sean-foy`;
+
 const data: any = {
   "@context": "https://schema.org",
-  "@type": "Organization",
-  name,
-  url,
+  "@graph": [
+    {
+      "@type": "ProfessionalService",
+      "@id": orgId,
+      name,
+      url,
+      description:
+        "Fractional COO and operating partner support for growth-stage and PE-backed businesses. Focused on operational control, cash visibility, and leadership cadence.",
+      areaServed: ["United Kingdom", "United States", "Europe"],
+      serviceType: [
+        "Fractional COO",
+        "Interim COO",
+        "Operating Partner Support",
+        "Post-acquisition integration",
+        "Forecasting and cash visibility",
+        "Operating model and execution cadence"
+      ],
+      founder: { "@id": personId },
+      knowsAbout: [
+        "private equity portfolio operations",
+        "growth-stage scaling",
+        "unit economics",
+        "working capital management",
+        "post-merger integration",
+        "multi-country supply chain expansion",
+        "leadership cadence"
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": personId,
+      name: "Sean Foy",
+      jobTitle: "Operating Partner and Fractional COO",
+      worksFor: { "@id": orgId },
+      sameAs: [
+        "https://www.linkedin.com/in/sean-foy/"
+      ]
+    }
+  ]
 };
 
 if (logoUrl) data.logo = logoUrl;

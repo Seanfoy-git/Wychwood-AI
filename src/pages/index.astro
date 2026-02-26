@@ -4,54 +4,75 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="Wychwood Partners — Execution Discipline for Scaling Companies"
-  description="Wychwood Partners helps growth-stage and PE-backed businesses install operating systems, forecasting discipline, and leadership cadence to scale predictably."
+  description="Wychwood Partners helps growth-stage and PE-backed businesses improve control across operations, cash, and leadership cadence so they scale without losing grip."
 >
   <main>
     <!-- Hero -->
     <section class="relative overflow-hidden">
       <div class="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(var(--brand-accent),0.08)_0%,rgba(var(--surface),1)_55%)]"></div>
       <div class="shell section">
-        <div class="max-w-3xl">
-          <p class="inline-flex items-center gap-2 rounded-full border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] px-3 py-1 text-xs text-[rgb(var(--text-muted))] shadow-sm">
-            <span class="h-1.5 w-1.5 rounded-full bg-[rgb(var(--brand-anchor))]"></span>
-            Fractional • Interim • Full-time COO support
-          </p>
-          <h1 class="mt-5 text-4xl font-semibold tracking-tight text-[rgb(var(--text))] md:text-6xl">
-            Execution discipline for scaling companies.
-          </h1>
-          <p class="mt-5 text-lg leading-relaxed text-[rgb(var(--text-muted))] md:text-xl">
-            Wychwood Partners installs an institutional operating system across three integrated layers — Operating System Architecture, Forecasting & Capital Planning, and Leadership Execution Cadence — so growth-stage and private equity-backed businesses can scale with structural clarity, capital discipline, and predictable performance.
-          </p>
+        <div class="grid gap-12 md:grid-cols-12 md:items-start">
 
-          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a
-              href="/contact"
-              class="inline-flex items-center justify-center rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-5 py-3 text-sm font-medium text-white transition hover:opacity-95"
-            >
-              Book a call
-            </a>
-            <a
-              href="/services"
-              class="inline-flex items-center justify-center rounded-[var(--radius-lg)] border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] px-5 py-3 text-sm font-medium text-[rgb(var(--text))] transition hover:bg-[rgb(var(--surface-subtle))]"
-            >
-              See how we work
-            </a>
+          <!-- LEFT: Hero Text -->
+          <div class="md:col-span-7">
+            <div class="max-w-3xl">
+              <p class="inline-flex items-center gap-2 rounded-full border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] px-3 py-1 text-xs text-[rgb(var(--text-muted))] shadow-sm">
+                <span class="h-1.5 w-1.5 rounded-full bg-[rgb(var(--brand-anchor))]"></span>
+                Fractional • Interim • Full-time COO support
+              </p>
+
+              <h1 class="mt-5 text-4xl font-semibold tracking-tight text-[rgb(var(--text))] md:text-6xl">
+                Execution discipline for scaling companies.
+              </h1>
+
+              <p class="mt-5 text-lg leading-relaxed text-[rgb(var(--text-muted))] md:text-xl">
+                Wychwood Partners works across three operating layers — operations, cash & forecasting, and leadership cadence — to improve control, visibility, and execution discipline as businesses scale.
+              </p>
+
+              <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+                <a
+                  href="/contact"
+                  class="inline-flex items-center justify-center rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-5 py-3 text-sm font-medium text-white transition hover:opacity-95"
+                >
+                  Book a call
+                </a>
+                <a
+                  href="/services"
+                  class="inline-flex items-center justify-center rounded-[var(--radius-lg)] border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] px-5 py-3 text-sm font-medium text-[rgb(var(--text))] transition hover:bg-[rgb(var(--surface-subtle))]"
+                >
+                  See how we work
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div class="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-3">
-            <div class="card p-4">
-              <p class="text-sm font-semibold">Operating System</p>
-              <p class="mt-1 text-sm text-[rgb(var(--text-muted))]">Roles, rhythms, metrics, and accountability.</p>
+          <!-- RIGHT: Three-Layer Diagram -->
+          <div class="md:col-span-5">
+            <div class="mt-10 md:mt-0 border border-[rgb(var(--border))] rounded-[var(--radius-xl)] overflow-hidden">
+
+              <div class="px-6 py-6 bg-[rgb(var(--surface-subtle))]">
+                <p class="text-sm font-semibold uppercase tracking-[0.16em] text-[rgb(var(--text))]">Operations</p>
+              </div>
+
+              <div class="h-px bg-[rgb(var(--border))]"></div>
+
+              <div class="px-6 py-6 bg-[rgb(var(--surface-elevated))]">
+                <p class="text-sm font-semibold uppercase tracking-[0.16em] text-[rgb(var(--text))]">Cash & Forecasting</p>
+              </div>
+
+              <div class="h-px bg-[rgb(var(--border))]"></div>
+
+              <div class="px-6 py-6 bg-[rgb(var(--surface-subtle))]">
+                <p class="text-sm font-semibold uppercase tracking-[0.16em] text-[rgb(var(--text))]">Leadership Cadence</p>
+              </div>
+
             </div>
-            <div class="card p-4">
-              <p class="text-sm font-semibold">Forecasting & Capital Planning</p>
-              <p class="mt-1 text-sm text-[rgb(var(--text-muted))]">Visibility, confidence, and decision velocity.</p>
-            </div>
-            <div class="card p-4">
-              <p class="text-sm font-semibold">Leadership Cadence</p>
-              <p class="mt-1 text-sm text-[rgb(var(--text-muted))]">Weekly execution rhythm that sticks.</p>
-            </div>
+
+            <p class="mt-6 text-sm text-[rgb(var(--text-muted))]">
+              When one layer weakens, control erodes. When all three align, execution holds.
+            </p>
           </div>
+
         </div>
       </div>
     </section>
@@ -78,7 +99,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="max-w-2xl">
             <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">What we install</h2>
             <p class="mt-2 text-[rgb(var(--text-muted))]">
-              Institutional operating architecture that converts strategy into capital-disciplined execution — without adding bureaucracy.
+              Practical operating control that converts strategy into disciplined execution — without adding bureaucracy.
             </p>
           </div>
           <a href="/services" class="text-sm font-medium text-[rgb(var(--text))] hover:underline">View services</a>
@@ -94,7 +115,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </a>
 
           <a href="/services/forecasting-frameworks" class="group card p-6 transition hover:shadow-md">
-            <p class="text-sm font-semibold">Forecasting frameworks</p>
+            <p class="text-sm font-semibold">Capital & forecasting</p>
             <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">
               Driver-based forecasting, pipeline confidence, and scenario planning.
             </p>
