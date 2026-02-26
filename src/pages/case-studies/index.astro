@@ -1,24 +1,57 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
----
-<BaseLayout title="Case Studies — Wychwood Partners" description="Structured case studies with measurable outcomes.">
-  <main class="mx-auto max-w-6xl px-6 py-14">
-    <h1 class="text-4xl font-semibold tracking-tight">Case studies</h1>
-    <p class="mt-4 max-w-2xl text-slate-600">
-      Proof, not promises. Replace placeholders with real metrics once you choose representative engagements.
-    </p>
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
 
-    <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
-      <div class="rounded-2xl border bg-white p-6 shadow-sm">
-        <p class="text-xs font-medium text-slate-500">Case study</p>
-        <p class="mt-2 text-lg font-semibold">From reactive to predictable execution</p>
-        <p class="mt-2 text-sm text-slate-600">Operating rhythm + accountability loops across leadership team.</p>
+const items = (await getCollection("case-studies"))
+  .filter((x) => !x.data.draft)
+  .sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf());
+---
+
+<BaseLayout
+  title="Case Studies — Wychwood Partners"
+  description="Structured case studies with measurable outcomes."
+  canonicalPath="/case-studies/"
+>
+  <main class="shell py-14">
+    <header class="max-w-3xl">
+      <h1>Case studies</h1>
+      <p class="mt-4 text-lg text-[rgb(var(--text-muted))]">
+        Proof, not promises. Short, structured engagements with clear outcomes.
+      </p>
+    </header>
+
+    <section class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+      {items.map((cs) => (
+        <a href={`/case-studies/${cs.slug}/`} class="group card p-6 transition hover:shadow-md">
+          <p class="kicker">
+            {(cs.data.industry ?? "Case study") + (cs.data.stage ? ` • ${cs.data.stage}` : "")}
+          </p>
+
+          <h2 class="mt-2">{cs.data.title}</h2>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">{cs.data.description}</p>
+
+          {cs.data.outcomes?.length ? (
+            <ul class="mt-4 space-y-1 text-sm text-[rgb(var(--text-muted))]">
+              {cs.data.outcomes.slice(0, 3).map((o) => (
+                <li>• {o}</li>
+              ))}
+            </ul>
+          ) : null}
+
+          <p class="mt-5 text-sm font-medium text-[rgb(var(--text))] group-hover:underline">
+            Read →
+          </p>
+        </a>
+      ))}
+    </section>
+
+    {items.length === 0 ? (
+      <div class="mt-10 card p-6">
+        <p class="text-sm font-semibold">No case studies published yet</p>
+        <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">
+          Add MDX files to <code>src/content/case-studies</code> and set <code>draft: false</code>.
+        </p>
       </div>
-      <div class="rounded-2xl border bg-white p-6 shadow-sm">
-        <p class="text-xs font-medium text-slate-500">Case study</p>
-        <p class="mt-2 text-lg font-semibold">Forecast confidence in 6 weeks</p>
-        <p class="mt-2 text-sm text-slate-600">Driver-based forecasting + scenario planning for faster decisions.</p>
-      </div>
-    </div>
+    ) : null}
   </main>
 </BaseLayout>

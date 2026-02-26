@@ -1,161 +1,49 @@
-VOICE & EDITORIAL GUIDELINES
+---
+title: Operating System
+---
 
-Wychwood Partners
+# Operating System
 
-⸻
+An effective operating system drives consistent performance and scalable growth. It aligns people, processes, and technology with the organisation’s strategic priorities.
 
-1. Language Standard
+## Key Components
 
-British English only.
+### 1. Strategy & Planning
 
-Always use:
-	•	organisation
-	•	optimisation
-	•	standardisation
-	•	prioritisation
-	•	modelling
-	•	behaviour
-	•	labour
-	•	centre
-	•	analyse
-	•	recognise
+Clear priorities and measurable goals guide decision-making and resource allocation.
 
-Never mix US and UK spelling.
+### 2. Governance & Oversight
 
-⸻
+Defined roles and responsibilities ensure accountability and control.
 
-2. Tone Principles
+### 3. Performance Management
 
-The voice is:
-	•	Calm
-	•	Understated
-	•	Institutional
-	•	Operator-led
-	•	Capital-aware
-	•	Direct
+Regular reviews and feedback loops support continuous improvement.
 
-The voice is not:
-	•	Academic
-	•	Buzzword-heavy
-	•	Over-structured
-	•	Over-explanatory
-	•	Marketing-driven
+### 4. Process & Workflow
 
-If it sounds like a whitepaper, rewrite it.
-If it sounds like a pitch deck, tighten it.
+Standardised procedures reduce variability and increase efficiency.
 
-⸻
+### 5. Data & Reporting
 
-3. Vocabulary Guardrails
+Accurate, timely information enables informed decisions.
 
-Primary Language (Use Freely)
-	•	control
-	•	ownership
-	•	margin
-	•	liquidity
-	•	execution
-	•	cadence
-	•	discipline
-	•	integration
-	•	cost base
-	•	capital allocation
+### 6. Technology & Tools
 
-Controlled Language (Limit Usage)
+Appropriate systems support execution and scale.
 
-Use sparingly:
-	•	architecture
-	•	structural
-	•	institutional
-	•	governance
-	•	integrated
-	•	capital-disciplined
+### 7. People & Culture
 
-No more than 2–3 uses per page unless conceptually required.
+Engaged teams aligned with organisational values drive results.
 
-⸻
+## Implementation Considerations
 
-4. Forbidden Phrasing Patterns
+- Avoid over-engineering; focus on practical solutions.
+- Balance control with flexibility.
+- Embed stabilisation mechanisms to manage change.
+- Leverage modelling to predict outcomes.
+- Prioritise optimisation of key processes.
+- Foster organisation-wide buy-in.
+- Use data to guide continuous improvement.
 
-Avoid:
-	•	“This engagement illustrates…”
-	•	“The structural backbone of…”
-	•	“Convert ambition into…”
-	•	“Integrated capital-aligned execution…”
-	•	“This framework becomes critical when…” (repeated pattern)
-
-Vary sentence openings. Avoid rhetorical symmetry.
-
-⸻
-
-5. Sentence Style Rules
-	•	Vary sentence length.
-	•	Insert occasional short, blunt sentences.
-	•	Prefer verbs over stacked abstract nouns.
-	•	Avoid concept stacking (e.g., “institutional operating architecture for capital-aligned execution”).
-
-Example shift:
-
-Instead of:
-
-Institutional operating architecture for capital-aligned execution.
-
-Use:
-
-Clear ownership, tighter numbers, and decisions that close.
-
-⸻
-
-6. Case Study Rules
-
-Case studies must feel lived-in and operational.
-
-Each case study must:
-	•	Use concrete actions (built, negotiated, reduced, installed, reset).
-	•	Include measurable impact where possible.
-	•	Avoid academic framing.
-	•	Avoid “This engagement illustrates…”
-	•	Avoid excessive abstract language.
-
-Case studies should read like operator experience, not consulting literature.
-
-⸻
-
-7. Framework Rules
-
-Frameworks may be structured, but:
-	•	Avoid identical section naming across all frameworks.
-	•	Reduce repetition of “structural layer.”
-	•	Replace some “governance” with “control” or “oversight.”
-	•	Include at least one grounded operator sentence per page.
-
-Example:
-
-Growth hides problems. Margin exposes them.
-
-Use sparingly.
-
-⸻
-
-8. Pre-Publish Checklist
-
-Before publishing any new page:
-
-☐ British spelling verified
-☐ No repeated abstract stacking
-☐ No “illustrates” intro
-☐ No more than 3 uses of “architecture”
-☐ At least one concrete operational sentence
-☐ Tone reads like a seasoned British operating partner
-
-⸻
-
-9. Positioning Anchor
-
-Wychwood Partners represents:
-	•	Fractional COO leadership
-	•	Private equity operating partnership
-	•	Capital discipline
-	•	Integration and scale
-	•	Board-level clarity
-
-Everything must reinforce this.
+A robust operating system is a competitive advantage. It enables the organisation to execute strategy effectively, adapt to changing conditions, and sustain performance over time.
