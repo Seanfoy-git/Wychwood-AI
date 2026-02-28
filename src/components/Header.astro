@@ -1,20 +1,30 @@
 ---
+const nav = [
+  { href: "/services", label: "Services" },
+  { href: "/case-studies", label: "Case Studies" },
+  { href: "/frameworks", label: "Frameworks" },
+  { href: "/insights", label: "Insights" },
+  { href: "/about", label: "About" },
+];
 ---
+
 <header class="sticky top-0 z-50 border-b border-[rgb(var(--border))] bg-[rgb(var(--surface))/0.9] backdrop-blur supports-[backdrop-filter]:bg-[rgb(var(--surface))/0.82]">
   <div class="shell flex items-center justify-between py-4">
     <a href="/" class="inline-flex items-center tracking-tight">
       <span class="brandmark text-lg font-semibold text-[rgb(var(--text))]">Wychwood Partners</span>
     </a>
 
+    <!-- Desktop nav -->
     <nav class="hidden items-center gap-5 text-[13px] text-[rgb(var(--text-muted))] md:flex" aria-label="Primary">
-      <a href="/services" class="transition hover:text-[rgb(var(--text))]">Services</a>
-      <a href="/case-studies" class="transition hover:text-[rgb(var(--text))]">Case Studies</a>
-      <a href="/frameworks" class="transition hover:text-[rgb(var(--text))]">Frameworks</a>
-      <a href="/insights" class="transition hover:text-[rgb(var(--text))]">Insights</a>
-      <a href="/about" class="transition hover:text-[rgb(var(--text))]">About</a>
+      {nav.map((item) => (
+        <a href={item.href} class="transition hover:text-[rgb(var(--text))]">
+          {item.label}
+        </a>
+      ))}
     </nav>
 
     <div class="flex items-center gap-3">
+      <!-- Desktop CTAs -->
       <a
         href="/contact"
         class="hidden rounded-[var(--radius-lg)] border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] px-4 py-2 text-sm font-medium text-[rgb(var(--text))] transition hover:bg-[rgb(var(--surface-subtle))] md:inline-flex"
@@ -23,7 +33,53 @@
       </a>
       <a
         href="/contact"
-        class="inline-flex rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-4 py-2 text-sm font-medium text-white transition hover:opacity-95"
+        class="hidden rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-4 py-2 text-sm font-medium text-white transition hover:opacity-95 md:inline-flex"
+      >
+        Book a call
+      </a>
+
+      <!-- Mobile menu (no JS) -->
+      <details class="relative md:hidden">
+        <summary
+          class="list-none inline-flex items-center justify-center rounded-[var(--radius-lg)] border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] px-3 py-2 text-sm font-medium text-[rgb(var(--text))] transition hover:bg-[rgb(var(--surface-subtle))] cursor-pointer"
+          aria-label="Open menu"
+        >
+          Menu
+        </summary>
+
+        <div class="absolute right-0 mt-2 w-56 overflow-hidden rounded-[var(--radius-xl)] border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] shadow-lg">
+          <nav class="flex flex-col p-2" aria-label="Mobile">
+            {nav.map((item) => (
+              <a
+                href={item.href}
+                class="rounded-[var(--radius-lg)] px-3 py-2 text-sm text-[rgb(var(--text))] transition hover:bg-[rgb(var(--surface-subtle))]"
+              >
+                {item.label}
+              </a>
+            ))}
+
+            <div class="my-2 h-px bg-[rgb(var(--border))]"></div>
+
+            <a
+              href="/contact"
+              class="rounded-[var(--radius-lg)] px-3 py-2 text-sm font-medium text-[rgb(var(--text))] transition hover:bg-[rgb(var(--surface-subtle))]"
+            >
+              Contact
+            </a>
+            <a
+              href="/contact"
+              class="mt-1 rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-3 py-2 text-sm font-medium text-white transition hover:opacity-95"
+            >
+              Book a call
+            </a>
+          </nav>
+        </div>
+      </details>
+
+      <!-- Mobile primary CTA (always visible) -->
+      <a
+        href="/contact"
+        class="inline-flex rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-4 py-2 text-sm font-medium text-white transition hover:opacity-95 md:hidden"
       >
         Book a call
       </a>
