@@ -1,3 +1,19 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection, getEntryBySlug } from "astro:content";
+
+export async function getStaticPaths() {
+  const items = await getCollection("frameworks");
+  return items.map((x) => ({ params: { slug: x.slug } }));
+}
+
+const { slug } = Astro.params;
+const entry = await getEntryBySlug("frameworks", slug!);
+if (!entry) throw new Error(`Framework not found: ${slug}`);
+
+const { Content } = await entry.render();
+const path = `/frameworks/${entry.slug}/`;
+---
 <BaseLayout
   title={`${entry.data.title} — Wychwood Partners`}
   description={entry.data.description}
