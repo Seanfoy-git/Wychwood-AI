@@ -121,14 +121,20 @@ const path = `/frameworks/${entry.slug}/`;
     background: transparent;
   }
   .framework-prose :global(ol) {
-    margin: 0.9rem 0 1rem;
-    padding-left: 1.25rem;
+    margin: 0.75rem 0 1rem;
+    padding-left: 1.35rem;
+    list-style-position: outside;
   }
 
   .framework-prose :global(ol li) {
-    margin: 0.45rem 0;
-    padding-left: 0.15rem;
+    margin: 0.3rem 0;
+    padding-left: 0.35rem;
+    line-height: 1.55;
   }
+  .framework-prose :global(h2 + ol) {
+    margin-top: 0.45rem;
+  }
+
   .framework-prose :global(h2) {
     font-size: 1.9rem;
     line-height: 1.15;
