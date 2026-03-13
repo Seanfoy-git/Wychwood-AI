@@ -19,9 +19,11 @@ export const collections = {
 
   frameworks: defineCollection({
     type: 'content',
-    schema: base.extend({
-      frameworkName: z.string().optional(),
+    schema: z.object({
+      title: z.string(),
+      description: z.string(),
       order: z.number().optional(),
+      frameworkName: z.string().optional(),
       cta: z
         .object({
           label: z.string(),
