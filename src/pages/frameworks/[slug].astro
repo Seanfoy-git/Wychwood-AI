@@ -24,7 +24,7 @@ const path = `/frameworks/${entry.slug}/`;
   <main class="shell py-20">
 
     <!-- Framework Hero -->
-    <section class="max-w-5xl">
+    <section class="max-w-5xl pb-12 border-b border-[rgb(var(--border))]">
       <p class="text-xs font-semibold uppercase tracking-[0.2em] text-[rgb(var(--text-muted))]">
         {entry.data.frameworkName ?? "Framework"}
       </p>
@@ -37,7 +37,7 @@ const path = `/frameworks/${entry.slug}/`;
         {entry.data.description}
       </p>
 
-      <div class="mt-8 max-w-3xl rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--surface))] p-6">
+      <div class="mt-8 max-w-3xl rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--surface))] p-6 shadow-sm">
         <p class="text-xs font-semibold uppercase tracking-[0.16em] text-[rgb(var(--text-muted))]">
           Strategic Note
         </p>
@@ -49,8 +49,18 @@ const path = `/frameworks/${entry.slug}/`;
     </section>
 
     <!-- Framework Content -->
-    <section class="mt-16 max-w-3xl">
-      <article class="prose prose-lg max-w-none">
+    <section class="mt-20 max-w-4xl">
+      <article class="prose prose-slate prose-lg max-w-none
+        prose-headings:font-semibold
+        prose-headings:tracking-tight
+        prose-h2:mt-16
+        prose-h2:border-t
+        prose-h2:border-[rgb(var(--border))]
+        prose-h2:pt-8
+        prose-p:leading-8
+        prose-p:text-[rgb(var(--text))]
+        prose-strong:text-[rgb(var(--text))]
+      ">
         <Content />
       </article>
 
