@@ -5,7 +5,7 @@ type Props = {
   headline: string;
   description: string;
   urlPath: string;
-  datePublished: Date;
+  datePublished?: Date;
   dateModified?: Date;
   authorName?: string;
 };
@@ -25,7 +25,7 @@ const data = {
   headline,
   description,
   mainEntityOfPage: new URL(urlPath, SITE.url).toString(),
-  datePublished: datePublished.toISOString(),
+  ...(datePublished ? { datePublished: datePublished.toISOString() } : {}),
   ...(dateModified ? { dateModified: dateModified.toISOString() } : {}),
   author: { "@type": "Organization", name: authorName },
   publisher: { "@type": "Organization", name: SITE.name },
