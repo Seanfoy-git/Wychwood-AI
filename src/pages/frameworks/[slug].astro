@@ -46,20 +46,58 @@ const path = `/frameworks/${entry.slug}/`;
           Most AI failures in scaling companies are not model failures. They are operating model failures: conflicting metrics, unclear ownership, unstable source systems, and undefined decision rules.
         </p>
       </div>
+      <div class="mt-8 grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] p-5 shadow-sm">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-[rgb(var(--text-muted))]">
+            Key Concept
+          </p>
+          <h2 class="mt-2 text-lg font-semibold tracking-tight">Operational Context</h2>
+          <p class="mt-2 text-sm leading-6 text-[rgb(var(--text-muted))]">
+            Define what metrics, entities, and workflows actually mean before trying to automate them.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] p-5 shadow-sm">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-[rgb(var(--text-muted))]">
+            Key Concept
+          </p>
+          <h2 class="mt-2 text-lg font-semibold tracking-tight">AI Gotcha</h2>
+          <p class="mt-2 text-sm leading-6 text-[rgb(var(--text-muted))]">
+            AI scales confusion when source systems, ownership, and decision rules are still ambiguous.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] p-5 shadow-sm">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-[rgb(var(--text-muted))]">
+            Key Concept
+          </p>
+          <h2 class="mt-2 text-lg font-semibold tracking-tight">Strategic Outcome</h2>
+          <p class="mt-2 text-sm leading-6 text-[rgb(var(--text-muted))]">
+            Better reporting, cleaner decisions, and an operating model that can actually support automation.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Framework Content -->
     <section class="mt-20 max-w-4xl">
-      <article class="prose prose-slate prose-lg max-w-none
+      <article class="framework-prose prose prose-slate prose-lg max-w-none
         prose-headings:font-semibold
         prose-headings:tracking-tight
         prose-h2:mt-16
-        prose-h2:border-t
-        prose-h2:border-[rgb(var(--border))]
-        prose-h2:pt-8
+        prose-h2:mb-4
+        prose-h3:mt-10
+        prose-h3:mb-3
         prose-p:leading-8
         prose-p:text-[rgb(var(--text))]
         prose-strong:text-[rgb(var(--text))]
+        prose-ul:space-y-3
+        prose-li:bg-[rgb(var(--surface-elevated))]
+        prose-li:px-4
+        prose-li:py-3
+        prose-li:rounded-lg
+        prose-li:border
+        prose-li:border-[rgb(var(--border))]
       ">
         <Content />
       </article>
@@ -72,4 +110,45 @@ const path = `/frameworks/${entry.slug}/`;
     </section>
 
   </main>
+<style>
+  .framework-prose :global(h2) {
+    font-size: 1.9rem;
+    line-height: 1.15;
+    margin-top: 4.5rem;
+  }
+
+  .framework-prose :global(h3) {
+    display: inline-block;
+    margin-top: 2.75rem;
+    padding: 0.55rem 0.85rem;
+    border: 1px solid rgb(var(--border));
+    border-radius: 9999px;
+    background: rgb(var(--surface-elevated));
+    font-size: 0.95rem;
+    line-height: 1.2;
+  }
+
+  .framework-prose :global(ul) {
+    display: grid;
+    gap: 0.9rem;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .framework-prose :global(li) {
+    margin: 0;
+  }
+
+  .framework-prose :global(blockquote) {
+    margin: 2rem 0;
+    padding: 1.25rem 1.25rem 1.25rem 1.1rem;
+    border-left: 3px solid rgb(var(--text));
+    background: rgb(var(--surface-elevated));
+    border-radius: 0.75rem;
+  }
+
+  .framework-prose :global(hr) {
+    display: none;
+  }
+</style>
 </BaseLayout>
