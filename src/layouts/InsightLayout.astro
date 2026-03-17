@@ -1,0 +1,39 @@
+
+
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout>
+  <main class="mx-auto max-w-3xl px-6 py-16">
+    <article class="prose insight prose-slate max-w-none">
+      {frontmatter?.title && (
+        <header class="mb-12">
+          <h1 class="text-4xl font-semibold tracking-tight">
+            {frontmatter.title}
+          </h1>
+
+          {frontmatter?.description && (
+            <p class="mt-4 text-lg text-gray-500">
+              {frontmatter.description}
+            </p>
+          )}
+
+          {frontmatter?.publishDate && (
+            <p class="mt-4 text-sm text-gray-400">
+              {new Date(frontmatter.publishDate).toLocaleDateString(undefined, {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </p>
+          )}
+        </header>
+      )}
+
+      <slot />
+    </article>
+  </main>
+</BaseLayout>
