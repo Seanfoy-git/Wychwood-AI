@@ -169,7 +169,7 @@
   }
 
   .prose.insight p {
-    margin-top: 1.5rem;
+    margin-top: 0;
     margin-bottom: 1.5rem;
     line-height: 1.85;
     font-size: 1.1rem;
@@ -179,41 +179,27 @@
   .prose.insight p:first-of-type {
     font-size: 1.125rem;
     line-height: 1.8;
+    margin-top: 0;
   }
 
   .prose.insight h2 {
     margin-top: 5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.25rem;
     font-size: 2rem;
     line-height: 1.15;
     letter-spacing: -0.025em;
   }
 
   .prose.insight h3 {
-    margin-top: 3.75rem;
+    margin-top: 3.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.4rem;
     line-height: 1.25;
   }
 
-  .prose.insight p + h2 {
-    margin-top: 5rem;
-  }
-
-  .prose.insight p + h3 {
-    margin-top: 3.75rem;
-  }
-
-  .prose.insight p + p {
-    margin-top: 1.25rem;
-  }
-
-  .prose.insight h2 + p {
-    margin-top: 1rem;
-  }
-
-  .prose.insight h3 + p {
-    margin-top: 1rem;
+  .prose.insight h2:first-child,
+  .prose.insight h3:first-child {
+    margin-top: 0;
   }
 
   .prose.insight ul,
