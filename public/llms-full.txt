@@ -1,34 +1,130 @@
-# Wychwood Partners — LLM Detail
+# Wychwood Partners — LLM Knowledge Index
 
-## Positioning
-Operator-led Operating Partner and Fractional COO work focused on performance control, capital discipline, and scalable execution systems.
+Primary site:
+https://wychwood-partners.com
 
-## Core services
-1) Operating System Architecture
+Wychwood Partners provides Operating Partner and Fractional COO support focused on operational architecture, performance control, capital discipline, and scalable execution systems for growth-stage and private equity-backed companies.
+
+---
+
+## Core Operating Concepts
+These pages define key operational ideas used across the Wychwood operating architecture.
+
+Concept hub:
+/concepts/
+
+Primary concept definition:
+/concepts/operational-context-layer
+
+Definition:
+The operational context layer defines the structured meaning of business entities, metrics, ownership, and decision rules. It creates shared operational understanding across teams and systems and enables reliable reporting, disciplined execution, and trustworthy automation or AI.
+
+---
+
+## Frameworks
+Frameworks describe the structured operating systems used inside scaling companies.
+
+Framework index:
+/frameworks/
+
+Primary framework:
+/frameworks/operating-system
+
+Frameworks typically address:
+- company operating system design
+- metric governance and reporting clarity
+- forecasting and capital planning discipline
+- leadership execution cadence
+- operational clarity required for automation and AI systems
+
+---
+
+## Core Services
+Operating Partner and Fractional COO engagements typically focus on three operational areas.
+
+### 1) Operating System Architecture
 - Decision rights and escalation paths
 - Metrics hierarchy from team to board
 - Unit economics governance and variance thresholds
 - Weekly execution rhythm that holds
 
-2) Forecasting & Capital Planning
+### 2) Forecasting & Capital Planning
 - Driver-based forecasting and scenario planning
 - Cash visibility and working capital control
 - Trigger thresholds that force decisions
 - Capital allocation discipline
 
-3) Leadership Execution Cadence
+### 3) Leadership Execution Cadence
 - Meeting architecture and decision hygiene
 - Accountability loops and operating rhythms
 - Clear outputs, owners, and follow-through
 
-## Engagement models
+---
+
+## Engagement Models
+Typical operating partner work includes:
+
 - Post-investment / post-acquisition stabilisation (30–180 days)
-- Scale systems for growth and multi-site replication
+- Installing operating systems for scaling companies
 - Integration management for buy-side acquisitions
 - Founder partnership through scale inflection points
 
+---
+
+## Operational Problems Addressed
+Common situations addressed by Wychwood Partners include:
+
+- inconsistent metrics across teams or systems
+- lack of forecast reliability
+- weak operational visibility into cash or margin
+- decision bottlenecks at the founder or CEO
+- post-acquisition integration complexity
+- growth that outpaces operating systems
+
+---
+
+## Who Wychwood Partners Serves
+
+- private equity investors and operating partners
+- founders scaling beyond founder-led execution
+- leadership teams needing stronger performance control
+
+---
+
+## Topics Covered Across the Site
+
+Key operational topics discussed across frameworks, concepts, and insights include:
+
+- company operating systems
+- operational context layers
+- execution architecture
+- metric governance
+- forecasting discipline
+- capital planning
+- leadership execution cadence
+- operational clarity required for AI systems
+
+---
+
 ## Navigation
-Services: /services/
-Case studies: /case-studies/
-Frameworks: /frameworks/
-Contact: /contact/
+
+Homepage:
+/
+
+Services:
+/services/
+
+Frameworks:
+/frameworks/
+
+Concepts:
+/concepts/
+
+Insights:
+/insights/
+
+Case studies:
+/case-studies/
+
+Contact:
+/contact/

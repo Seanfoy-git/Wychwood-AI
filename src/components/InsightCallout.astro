@@ -1,0 +1,26 @@
+
+
+---
+interface Props {
+  label: string;
+  title?: string;
+}
+
+const { label, title } = Astro.props;
+---
+
+<div class="not-prose my-10 rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] p-6">
+  <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[rgb(var(--text-muted))]">
+    {label}
+  </p>
+
+  {title && (
+    <h3 class="mt-2 text-lg font-semibold leading-7 text-[rgb(var(--text))]">
+      {title}
+    </h3>
+  )}
+
+  <div class={`mt-3 space-y-4 text-[rgb(var(--text))] ${title ? "text-sm leading-7" : "text-base leading-7"}`}>
+    <slot />
+  </div>
+</div>

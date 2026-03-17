@@ -32,14 +32,17 @@ const nav = [
       >
         Contact
       </a>
-      <a
-        href="https://calendar.app.google/RRKFf2z6rNDrmzFE8"
-        target="_blank"
-        rel="noopener"
-        class="hidden rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-4 py-2 text-sm font-medium text-white transition hover:opacity-95 md:inline-flex"
-      >
-        Book an Intro Call
-      </a>
+      <div class="hidden flex-col items-end md:flex">
+        <a
+          href="https://calendar.app.google/RRKFf2z6rNDrmzFE8"
+          target="_blank"
+          rel="noopener"
+          class="rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-4 py-2 text-sm font-medium text-white transition hover:opacity-95"
+        >
+          Book an Intro Call
+        </a>
+        <span class="mt-1 text-xs text-[rgb(var(--text-muted))]">25‑minute conversation • No preparation required</span>
+      </div>
 
       <!-- Mobile menu (no JS) -->
       <details class="relative md:hidden">
@@ -82,14 +85,17 @@ const nav = [
       </details>
 
       <!-- Mobile primary CTA (always visible) -->
-      <a
-        href="https://calendar.app.google/RRKFf2z6rNDrmzFE8"
-        target="_blank"
-        rel="noopener"
-        class="inline-flex rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-4 py-2 text-sm font-medium text-white transition hover:opacity-95 md:hidden"
-      >
-        Book an Intro Call
-      </a>
+      <div class="flex flex-col items-center md:hidden">
+        <a
+          href="https://calendar.app.google/RRKFf2z6rNDrmzFE8"
+          target="_blank"
+          rel="noopener"
+          class="inline-flex rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-4 py-2 text-sm font-medium text-white transition hover:opacity-95"
+        >
+          Book an Intro Call
+        </a>
+        <span class="mt-1 text-xs text-[rgb(var(--text-muted))]">25‑minute intro conversation</span>
+      </div>
     </div>
   </div>
 </header>

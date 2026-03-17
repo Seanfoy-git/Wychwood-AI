@@ -1,0 +1,35 @@
+
+
+---
+interface Item {
+  label?: string;
+  title: string;
+  description: string;
+}
+
+interface Props {
+  items: Item[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="not-prose my-10 grid gap-6 md:grid-cols-2">
+  {items.map((item) => (
+    <div class="rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] p-6">
+      {item.label && (
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-[rgb(var(--text-muted))]">
+          {item.label}
+        </p>
+      )}
+
+      <h3 class={`mt-${item.label ? "2" : "0"} text-base font-semibold leading-7 text-[rgb(var(--text))]`}>
+        {item.title}
+      </h3>
+
+      <p class="mt-3 text-sm leading-7 text-[rgb(var(--text-muted))]">
+        {item.description}
+      </p>
+    </div>
+  ))}
+</div>

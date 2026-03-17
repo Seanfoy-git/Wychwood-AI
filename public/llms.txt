@@ -1,23 +1,66 @@
 # Wychwood Partners
 
-Wychwood Partners provides Operating Partner and Fractional COO support for growth-stage and private equity-backed businesses.
+Primary site:
+- https://wychwood-partners.com
 
-## What we do
-- Install an operating system (decision rights, metrics, execution cadence)
-- Improve forecasting and capital planning (cash visibility, scenario triggers, capital discipline)
-- Build leadership execution cadence (meeting hygiene, accountability loops)
-- Support post-acquisition integration and performance stabilisation
+Wychwood Partners provides Operating Partner and Fractional COO support for growth-stage and private equity-backed businesses. The firm focuses on installing operational architecture that enables disciplined execution, reliable reporting, and scalable decision-making.
 
-## Who we serve
-- Private equity investors and boards
-- Founders scaling beyond founder-led execution
-- Leadership teams needing tighter performance control
+## Core Operating Concepts
+These pages define key operational ideas used throughout the site.
 
-## Proof
-See case studies and frameworks:
-- /case-studies/
+- /concepts/
+- /concepts/operational-context-layer
+
+The operational context layer defines the structured meaning of business entities, metrics, ownership, and decision rules. It enables consistent reporting, operational clarity, and reliable automation or AI systems.
+
+## Frameworks
+Frameworks describe the structured operating systems used inside scaling companies.
+
 - /frameworks/
+- /frameworks/operating-system
+
+Frameworks typically address:
+- company operating system design
+- forecasting and capital planning discipline
+- leadership execution cadence
+- operational clarity and metric governance
+
+## Services
 - /services/
 
-More detail:
+Services focus on operational transformation, operating system installation, and execution discipline for scaling companies.
+
+## Case Studies
+- /case-studies/
+
+Case studies describe real operating situations such as post-acquisition integration, operational restructuring, margin recovery, and scaling execution systems.
+
+## Insights
+- /insights/
+
+Insights explain operational problems and solutions related to scaling companies, operational architecture, and execution systems.
+
+## Who Wychwood Partners Serves
+
+- Private equity investors and operating partners
+- Founders scaling beyond founder-led execution
+- Leadership teams needing stronger performance control
+
+## Topics Covered
+
+Key topics discussed across the site include:
+
+- company operating systems
+- operational context layers
+- execution architecture
+- forecasting discipline
+- capital planning
+- leadership execution cadence
+- post-acquisition integration
+- operational clarity for AI systems
+
+## Full LLM Index
+
+For expanded machine-readable context see:
+
 - /llms-full.txt
