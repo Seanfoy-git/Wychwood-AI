@@ -4,28 +4,22 @@
 
 @layer base {
   :root {
-    /* Typography */
     --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial,
       "Noto Sans", "Liberation Sans", sans-serif;
     --font-serif: "IBM Plex Serif", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 
-    /* Brand */
     --brand-anchor: 15 23 42;
     --brand-accent: 37 99 235;
 
-    /* Surfaces */
     --surface: 250 250 249;
     --surface-elevated: 255 255 255;
     --surface-subtle: 245 245 244;
 
-    /* Borders */
     --border: 226 232 240;
 
-    /* Text */
     --text: 15 23 42;
     --text-muted: 71 85 105;
 
-    /* Radius */
     --radius-lg: 16px;
     --radius-xl: 20px;
   }
@@ -44,126 +38,24 @@
     letter-spacing: -0.01em;
   }
 
-  h1,
-  h2,
-  h3 {
+  h1, h2, h3 {
     font-family: var(--font-serif);
     letter-spacing: -0.02em;
   }
 
-  h4,
-  h5,
-  h6 {
+  h4, h5, h6 {
     font-family: var(--font-sans);
     letter-spacing: -0.01em;
   }
 
-  /* Type scale + hierarchy */
-  h1 {
-    @apply text-4xl md:text-6xl font-semibold tracking-tight;
-  }
+  h1 { @apply text-4xl md:text-6xl font-semibold tracking-tight; }
+  h2 { @apply text-2xl md:text-3xl font-semibold tracking-tight; }
+  h3 { @apply text-xl font-semibold; }
 
-  h2 {
-    @apply text-2xl md:text-3xl font-semibold tracking-tight;
-  }
-
-  h3 {
-    @apply text-xl font-semibold;
-  }
-
-  h4 {
-    @apply text-lg font-semibold;
-  }
-
-  h5 {
-    @apply text-base font-semibold;
-  }
-
-  h6 {
-    @apply text-sm font-semibold;
-  }
-
-  p {
-    @apply leading-relaxed;
-  }
-
-  ::selection {
-    background: rgba(var(--brand-accent), 0.18);
-  }
-
-  a {
-    text-underline-offset: 0.18em;
-  }
+  p { @apply leading-relaxed; }
 }
 
 @layer components {
-  .shell {
-    @apply mx-auto max-w-6xl px-6;
-  }
-
-  .section {
-    @apply py-16;
-  }
-
-  .section-sm {
-    @apply py-10;
-  }
-
-  .kicker {
-    @apply text-xs font-medium tracking-wide uppercase;
-    color: rgb(var(--text-muted));
-  }
-
-  .brandmark {
-    font-family: var(--font-serif);
-    letter-spacing: -0.01em;
-  }
-
-  .card {
-    @apply shadow-sm;
-    border: 1px solid rgb(var(--border));
-    background: rgb(var(--surface-elevated));
-    border-radius: var(--radius-xl);
-  }
-
-  .card-muted {
-    border: 1px solid rgb(var(--border));
-    background: rgb(var(--surface-subtle));
-    border-radius: var(--radius-xl);
-  }
-
-  .grid-surface {
-    background-image:
-      linear-gradient(to right, rgba(var(--brand-anchor), 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(var(--brand-anchor), 0.04) 1px, transparent 1px);
-    background-size: 48px 48px;
-  }
-
-  /* Case study typography: operating memo (for MDX/Markdown content) */
-  .prose.case-study h2 {
-    font-family: var(--font-serif);
-    font-size: 1.5rem;
-    line-height: 1.2;
-    margin-top: 2.25rem;
-    margin-bottom: 0.75rem;
-    letter-spacing: -0.01em;
-    padding-top: 1.25rem;
-    border-top: 1px solid rgb(var(--border));
-  }
-
-  .prose.case-study h2:first-child {
-    margin-top: 0;
-    padding-top: 0;
-    border-top: none;
-  }
-
-  .prose.case-study p {
-    color: rgb(var(--text-muted));
-    margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-  }
-
-  /* Insight article typography system */
   .prose.insight {
     max-width: 640px;
   }
@@ -212,11 +104,5 @@
   .prose.insight li {
     margin-top: 0.5rem;
     line-height: 1.65;
-  }
-
-  /* Removed generic flow rhythm for better spacing control */
-  .prose.insight .not-prose {
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
   }
 }
