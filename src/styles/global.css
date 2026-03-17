@@ -165,14 +165,14 @@
 
   /* Insight article typography system */
   .prose.insight {
-    max-width: 680px;
+    max-width: 640px;
   }
 
   .prose.insight p {
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    line-height: 1.8;
-    font-size: 1.075rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.85;
+    font-size: 1.1rem;
     color: rgb(var(--text));
   }
 
@@ -221,10 +221,10 @@
   }
 
   .prose.insight > * + * {
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
+  }
+  .prose.insight .not-prose {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
   }
 }
-  .prose.insight .not-prose {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
