@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SchemaArticle from '../../components/SchemaArticle.astro';
+import SchemaBreadcrumb from '../../components/SchemaBreadcrumb.astro';
 import { getCollection, getEntry } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -30,6 +31,11 @@ const path = `/insights/${post.slug}/`;
     dateModified={post.data.updatedDate}
     authorName={post.data.author}
   />
+  <SchemaBreadcrumb crumbs={[
+    { name: "Home", href: "/" },
+    { name: "Insights", href: "/insights/" },
+    { name: post.data.title, href: path },
+  ]} />
 
   <main class="shell py-14">
     <div class="max-w-3xl">

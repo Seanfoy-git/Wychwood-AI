@@ -1,0 +1,26 @@
+---
+import { SITE } from '../lib/site';
+
+type Crumb = { name: string; href: string };
+
+type Props = {
+  crumbs: Crumb[];
+};
+
+const { crumbs } = Astro.props as Props;
+
+const itemListElement = crumbs.map((crumb, i) => ({
+  "@type": "ListItem",
+  position: i + 1,
+  name: crumb.name,
+  item: new URL(crumb.href, SITE.url).toString(),
+}));
+
+const data = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement,
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(data)}></script>

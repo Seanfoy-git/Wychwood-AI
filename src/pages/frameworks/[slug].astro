@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import SchemaBreadcrumb from "../../components/SchemaBreadcrumb.astro";
 import { getCollection, getEntry } from "astro:content";
 
 export async function getStaticPaths() {
@@ -21,6 +22,11 @@ const path = `/frameworks/${entry.slug}/`;
   canonicalPath={path}
   ogType="article"
 >
+  <SchemaBreadcrumb crumbs={[
+    { name: "Home", href: "/" },
+    { name: "Frameworks", href: "/frameworks/" },
+    { name: entry.data.title, href: path },
+  ]} />
 
 <main class="shell py-14">
 
