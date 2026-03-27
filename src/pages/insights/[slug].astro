@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import SchemaArticle from '../../components/SchemaArticle.astro';
-import { getCollection, getEntryBySlug } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 
 export async function getStaticPaths() {
   const posts = await getCollection('insights');
@@ -9,7 +9,7 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const post = await getEntryBySlug('insights', slug!);
+const post = await getEntry('insights', slug!);
 if (!post) throw new Error(`Insight not found: ${slug}`);
 
 const { Content } = await post.render();
@@ -31,15 +31,17 @@ const path = `/insights/${post.slug}/`;
     authorName={post.data.author}
   />
 
-  <main class="mx-auto max-w-3xl px-6 py-14">
-    <p class="text-xs font-medium text-slate-500">
-      {post.data.publishDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}
-    </p>
-    <h1 class="mt-3 text-4xl font-semibold tracking-tight">{post.data.title}</h1>
-    <p class="mt-4 text-lg text-slate-600">{post.data.description}</p>
+  <main class="shell py-14">
+    <div class="max-w-3xl">
+      <p class="kicker">
+        {post.data.publishDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}
+      </p>
+      <h1 class="mt-3">{post.data.title}</h1>
+      <p class="mt-4 text-lg text-[rgb(var(--text-muted))]">{post.data.description}</p>
 
-    <article class="prose insight prose-slate mt-10 max-w-none">
-      <Content />
-    </article>
+      <article class="prose insight mt-10 max-w-none">
+        <Content />
+      </article>
+    </div>
   </main>
 </BaseLayout>

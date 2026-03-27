@@ -56,6 +56,55 @@
 }
 
 @layer components {
+
+  /* Layout */
+  .shell {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 72rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .shell {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .section-sm {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  /* Cards */
+  .card {
+    border-radius: 0.75rem;
+    border: 1px solid rgb(var(--border));
+    background-color: rgb(var(--surface-elevated));
+  }
+
+  .card-muted {
+    border-radius: 0.75rem;
+    border: 1px solid rgb(var(--border));
+    background-color: rgb(var(--surface-subtle));
+  }
+
+  /* Kicker label */
+  .kicker {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: rgb(var(--text-muted));
+  }
+
+  /* Prose: Insight articles */
   .prose.insight {
     max-width: 640px;
   }
@@ -104,5 +153,86 @@
   .prose.insight li {
     margin-top: 0.5rem;
     line-height: 1.65;
+  }
+
+  /* Prose: Framework articles */
+  .prose.framework p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+    font-size: 1.05rem;
+    color: rgb(var(--text));
+  }
+
+  .prose.framework h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+    color: rgb(var(--text));
+  }
+
+  .prose.framework h2:first-child {
+    margin-top: 0;
+  }
+
+  .prose.framework ol {
+    margin: 0.75rem 0 1.25rem;
+    padding-left: 1.35rem;
+  }
+
+  .prose.framework ol li {
+    margin: 0.35rem 0;
+    line-height: 1.65;
+  }
+
+  .prose.framework ul {
+    margin: 0.75rem 0 1.25rem;
+    padding-left: 1.2rem;
+  }
+
+  .prose.framework li {
+    margin: 0.35rem 0;
+    line-height: 1.65;
+  }
+
+  .prose.framework hr {
+    display: none;
+  }
+
+  /* Prose: Case study articles */
+  .prose.case-study p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    line-height: 1.75;
+    font-size: 1.05rem;
+    color: rgb(var(--text));
+  }
+
+  .prose.case-study h2 {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin-top: 3rem;
+    margin-bottom: 0.75rem;
+    color: rgb(var(--text));
+  }
+
+  .prose.case-study h2:first-child {
+    margin-top: 0;
+  }
+
+  .prose.case-study ul,
+  .prose.case-study ol {
+    margin: 0.75rem 0 1.25rem;
+    padding-left: 1.35rem;
+  }
+
+  .prose.case-study li {
+    margin: 0.35rem 0;
+    line-height: 1.65;
+  }
+
+  .prose.case-study hr {
+    display: none;
   }
 }

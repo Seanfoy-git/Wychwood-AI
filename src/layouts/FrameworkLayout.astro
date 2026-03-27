@@ -1,0 +1,51 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<BaseLayout>
+  <main class="shell py-14">
+    <article class="max-w-3xl">
+      {frontmatter?.title && (
+        <header class="mb-10">
+          <h1>{frontmatter.title}</h1>
+
+          {frontmatter?.description && (
+            <p class="mt-4 text-lg text-[rgb(var(--text-muted))]">
+              {frontmatter.description}
+            </p>
+          )}
+        </header>
+      )}
+
+      {frontmatter?.summary && (
+        <div class="mb-10 rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--surface-subtle))] p-6">
+          <p class="text-xs font-semibold uppercase tracking-wide text-[rgb(var(--text-muted))] mb-2">
+            What this is
+          </p>
+          <p class="text-base text-[rgb(var(--text))]">
+            {frontmatter.summary}
+          </p>
+        </div>
+      )}
+
+      <slot />
+
+      {frontmatter?.cta && (
+        <div class="mt-16 card p-6">
+          <p class="text-xs font-semibold uppercase tracking-wide text-[rgb(var(--text-muted))] mb-2">Apply this</p>
+          <p class="text-base text-[rgb(var(--text))] mb-4">
+            {frontmatter.cta}
+          </p>
+          <a
+            href="/contact"
+            class="inline-flex items-center justify-center rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-4 py-2 text-sm font-medium text-white transition hover:opacity-95"
+          >
+            Discuss this framework
+          </a>
+        </div>
+      )}
+    </article>
+  </main>
+</BaseLayout>

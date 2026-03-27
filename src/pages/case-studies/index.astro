@@ -27,7 +27,7 @@ const items = (await getCollection("case-studies"))
             {(cs.data.industry ?? "Case study") + (cs.data.stage ? ` • ${cs.data.stage}` : "")}
           </p>
 
-          <h2 class="mt-2">{cs.data.title}</h2>
+          <p class="mt-2 text-lg font-semibold">{cs.data.title}</p>
           <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">{cs.data.description}</p>
 
           {cs.data.outcomes?.length ? (

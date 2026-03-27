@@ -22,14 +22,12 @@ export const collections = {
     schema: z.object({
       title: z.string(),
       description: z.string(),
+      publishDate: z.coerce.date().optional(),
+      draft: z.boolean().default(false),
       order: z.number().optional(),
       frameworkName: z.string().optional(),
-      cta: z
-        .object({
-          label: z.string(),
-          href: z.string(),
-        })
-        .optional(),
+      summary: z.string().optional(),
+      cta: z.string().optional(),
     }),
   }),
 

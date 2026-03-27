@@ -8,21 +8,21 @@ const posts = (await getCollection('insights'))
 ---
 
 <BaseLayout title="Insights — Wychwood Partners" description="Frameworks and practical insights on scaling execution discipline.">
-  <main class="mx-auto max-w-6xl px-6 py-14">
-    <h1 class="text-4xl font-semibold tracking-tight">Insights</h1>
-    <p class="mt-4 max-w-2xl text-slate-600">
+  <main class="shell py-14">
+    <h1>Insights</h1>
+    <p class="mt-4 max-w-2xl text-[rgb(var(--text-muted))]">
       Short, structured thinking on scaling operations, forecasting, and leadership cadence.
     </p>
 
     <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
       {posts.map((post) => (
-        <a href={`/insights/${post.slug}/`} class="group rounded-2xl border bg-white p-6 shadow-sm hover:shadow-md">
-          <p class="text-xs font-medium text-slate-500">
+        <a href={`/insights/${post.slug}/`} class="group card p-6 transition hover:shadow-md">
+          <p class="kicker">
             {post.data.publishDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' })}
           </p>
           <p class="mt-2 text-lg font-semibold">{post.data.title}</p>
-          <p class="mt-2 text-sm text-slate-600">{post.data.description}</p>
-          <p class="mt-4 text-sm font-medium text-slate-900 group-hover:underline">Read →</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">{post.data.description}</p>
+          <p class="mt-4 text-sm font-medium text-[rgb(var(--text))] group-hover:underline">Read →</p>
         </a>
       ))}
     </div>
