@@ -10,6 +10,9 @@ These pages define key operational ideas used throughout the site.
 
 - /concepts/
 - /concepts/operational-context-layer
+- /concepts/company-operating-system/
+- /concepts/execution-architecture/
+- /concepts/decision-governance/
 
 The operational context layer defines the structured meaning of business entities, metrics, ownership, and decision rules. It enables consistent reporting, operational clarity, and reliable automation or AI systems.
 
@@ -17,28 +20,34 @@ The operational context layer defines the structured meaning of business entitie
 Frameworks describe the structured operating systems used inside scaling companies.
 
 - /frameworks/
-- /frameworks/operating-system
+- /frameworks/operating-system/
+- /frameworks/forecasting-discipline/
+- /frameworks/leadership-cadence/
 
-Frameworks typically address:
+Frameworks address:
 - company operating system design
 - forecasting and capital planning discipline
 - leadership execution cadence
 - operational clarity and metric governance
 
-## Services
-- /services/
-
-Services focus on operational transformation, operating system installation, and execution discipline for scaling companies.
+## Insights
+- /insights/
+- /insights/execution-discipline/
+- /insights/why-ai-initiatives-fail/
 
 ## Case Studies
 - /case-studies/
+- /case-studies/crisis-operations-restructuring/
+- /case-studies/global-supply-chain-creation/
+- /case-studies/multi-acquisition-integration/
+- /case-studies/same-day-field-operations-platform/
+- /case-studies/scaling-multi-state-auto-platform/
 
-Case studies describe real operating situations such as post-acquisition integration, operational restructuring, margin recovery, and scaling execution systems.
-
-## Insights
-- /insights/
-
-Insights explain operational problems and solutions related to scaling companies, operational architecture, and execution systems.
+## Services
+- /services/
+- /services/operational-systems/
+- /services/forecasting-frameworks/
+- /services/leadership-cadence/
 
 ## Who Wychwood Partners Serves
 

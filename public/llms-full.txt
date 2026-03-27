@@ -13,11 +13,25 @@ These pages define key operational ideas used across the Wychwood operating arch
 Concept hub:
 /concepts/
 
-Primary concept definition:
+### Operational Context Layer
 /concepts/operational-context-layer
 
-Definition:
 The operational context layer defines the structured meaning of business entities, metrics, ownership, and decision rules. It creates shared operational understanding across teams and systems and enables reliable reporting, disciplined execution, and trustworthy automation or AI.
+
+### Company Operating System
+/concepts/company-operating-system/
+
+The metrics, ownership structures, and execution routines that define how a company actually operates as it scales.
+
+### Execution Architecture
+/concepts/execution-architecture/
+
+The operating structure that connects strategy, operations, forecasting, and leadership cadence into a coherent execution system.
+
+### Decision Governance
+/concepts/decision-governance/
+
+The explicit ownership and escalation structure that ensures decisions are made consistently and efficiently across the organisation.
 
 ---
 
@@ -27,34 +41,97 @@ Frameworks describe the structured operating systems used inside scaling compani
 Framework index:
 /frameworks/
 
-Primary framework:
-/frameworks/operating-system
+### Company Operating System Framework
+/frameworks/operating-system/
 
-Frameworks typically address:
-- company operating system design
-- metric governance and reporting clarity
-- forecasting and capital planning discipline
-- leadership execution cadence
-- operational clarity required for automation and AI systems
+Defines metrics hierarchy, ownership structures, decision rights, and execution routines. The operational foundation every scaling company needs.
+
+### Forecasting & Capital Planning Framework
+/frameworks/forecasting-discipline/
+
+Driver-based forecasting, cash visibility, and capital allocation discipline. Enables leadership to allocate capital with confidence and identify risk before it becomes a crisis.
+
+### Leadership Execution Cadence Framework
+/frameworks/leadership-cadence/
+
+Weekly rhythm, accountability loops, and leadership team performance systems. Turns decisions into consistent execution across the organisation.
+
+---
+
+## Insights
+
+Insight index:
+/insights/
+
+### Execution Discipline: The Missing Operating Layer
+/insights/execution-discipline/
+
+Why scaling companies fail due to lack of operational clarity, and how execution discipline restores control.
+
+### Why AI Initiatives Fail
+/insights/why-ai-initiatives-fail/
+
+How operational ambiguity undermines AI projects and why clarity must precede automation.
+
+---
+
+## Case Studies
+
+Case study index:
+/case-studies/
+
+### Crisis Operations Restructuring
+/case-studies/crisis-operations-restructuring/
+
+Rapid stabilisation of an operationally distressed business — restoring cash control, reporting reliability, and leadership accountability.
+
+### Global Supply Chain Creation
+/case-studies/global-supply-chain-creation/
+
+Building an international supply chain from zero across 17 countries for a global technology company. Operational model design for multi-country scale.
+
+### Multi-Acquisition Integration
+/case-studies/multi-acquisition-integration/
+
+Post-acquisition integration across multiple buy-side transactions — integrating systems, reporting, and leadership structures into a coherent operating platform.
+
+### Same-Day Field Operations Platform
+/case-studies/same-day-field-operations-platform/
+
+Designing and scaling a same-day field operations platform across 51 US cities, including mobile inventory systems and working capital optimisation.
+
+### Scaling Multi-State Auto Platform
+/case-studies/scaling-multi-state-auto-platform/
+
+Scaling an asset-heavy, multi-state automotive platform from $85m to over $700m in revenue through to IPO, installing site-level margin control and operating governance.
 
 ---
 
 ## Core Services
 Operating Partner and Fractional COO engagements typically focus on three operational areas.
 
+Service index:
+/services/
+
 ### 1) Operating System Architecture
+/services/operational-systems/
+
 - Decision rights and escalation paths
 - Metrics hierarchy from team to board
 - Unit economics governance and variance thresholds
 - Weekly execution rhythm that holds
 
 ### 2) Forecasting & Capital Planning
+/services/forecasting-frameworks/
+
 - Driver-based forecasting and scenario planning
 - Cash visibility and working capital control
 - Trigger thresholds that force decisions
 - Capital allocation discipline
 
 ### 3) Leadership Execution Cadence
+/services/leadership-cadence/
+
 - Meeting architecture and decision hygiene
 - Accountability loops and operating rhythms
 - Clear outputs, owners, and follow-through
@@ -106,25 +183,22 @@ Key operational topics discussed across frameworks, concepts, and insights inclu
 
 ---
 
+## About
+
+About page:
+/about/
+
+Wychwood Partners is led by Sean Foy, an operator with experience scaling growth-stage and private equity-backed businesses across consumer technology, e-commerce, logistics, and asset-heavy multi-site platforms. Chartered Director (CDir). LinkedIn: https://www.linkedin.com/in/seanfoy/
+
+---
+
 ## Navigation
 
-Homepage:
-/
-
-Services:
-/services/
-
-Frameworks:
-/frameworks/
-
-Concepts:
-/concepts/
-
-Insights:
-/insights/
-
-Case studies:
-/case-studies/
-
-Contact:
-/contact/
+Homepage: /
+Services: /services/
+Frameworks: /frameworks/
+Concepts: /concepts/
+Insights: /insights/
+Case studies: /case-studies/
+About: /about/
+Contact: /contact/
