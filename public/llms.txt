@@ -5,17 +5,6 @@ Primary site:
 
 Wychwood Partners provides Operating Partner and Fractional COO support for growth-stage and private equity-backed businesses. The firm focuses on installing operational architecture that enables disciplined execution, reliable reporting, and scalable decision-making.
 
-## Core Operating Concepts
-These pages define key operational ideas used throughout the site.
-
-- /concepts/
-- /concepts/operational-context-layer
-- /concepts/company-operating-system/
-- /concepts/execution-architecture/
-- /concepts/decision-governance/
-
-The operational context layer defines the structured meaning of business entities, metrics, ownership, and decision rules. It enables consistent reporting, operational clarity, and reliable automation or AI systems.
-
 ## Frameworks
 Frameworks describe the structured operating systems used inside scaling companies.
 
@@ -32,6 +21,7 @@ Frameworks address:
 
 ## Insights
 - /insights/
+- /insights/multi-site-expansion/
 - /insights/founder-bottleneck/
 - /insights/q2-plans-die/
 - /insights/metric-disagreement/

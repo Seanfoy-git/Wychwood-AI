@@ -7,34 +7,6 @@ Wychwood Partners provides Operating Partner and Fractional COO support focused 
 
 ---
 
-## Core Operating Concepts
-These pages define key operational ideas used across the Wychwood operating architecture.
-
-Concept hub:
-/concepts/
-
-### Operational Context Layer
-/concepts/operational-context-layer
-
-The operational context layer defines the structured meaning of business entities, metrics, ownership, and decision rules. It creates shared operational understanding across teams and systems and enables reliable reporting, disciplined execution, and trustworthy automation or AI.
-
-### Company Operating System
-/concepts/company-operating-system/
-
-The metrics, ownership structures, and execution routines that define how a company actually operates as it scales.
-
-### Execution Architecture
-/concepts/execution-architecture/
-
-The operating structure that connects strategy, operations, forecasting, and leadership cadence into a coherent execution system.
-
-### Decision Governance
-/concepts/decision-governance/
-
-The explicit ownership and escalation structure that ensures decisions are made consistently and efficiently across the organisation.
-
----
-
 ## Frameworks
 Frameworks describe the structured operating systems used inside scaling companies.
 
@@ -62,6 +34,11 @@ Weekly rhythm, accountability loops, and leadership team performance systems. Tu
 
 Insight index:
 /insights/
+
+### What Breaks When You Open Your Second Location
+/insights/multi-site-expansion/
+
+A single-site operating model does not scale. Covers why proximity, institutional memory, and founder-led culture substitute for process at one site — and why those substitutes fail the moment a second location opens. Includes the five predictable failure modes of multi-site expansion and what a genuine multi-site operating model requires: standardised performance drivers, site-level P&L, distributed decision authority, and a network operating cadence.
 
 ### Why Every Important Decision Still Lands on Your Desk
 /insights/founder-bottleneck/
@@ -212,7 +189,6 @@ Wychwood Partners is led by Sean Foy, an operator with experience scaling growth
 Homepage: /
 Services: /services/
 Frameworks: /frameworks/
-Concepts: /concepts/
 Insights: /insights/
 Case studies: /case-studies/
 About: /about/
