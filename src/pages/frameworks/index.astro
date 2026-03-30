@@ -22,6 +22,10 @@ const frameworks = Array.from(new Map(frameworksAll.map((f) => [f.slug, f])).val
       </p>
     </header>
 
+    <div class="mt-10 rounded-xl border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] p-6">
+      <img src="/images/three-layer-operating-model.svg" alt="The three operating layers: Operating System, Cash &amp; Forecasting, and Leadership Cadence" class="w-full" />
+    </div>
+
     {frameworks.length === 0 ? (
       <div class="mt-10 card p-6">
         <p class="text-sm font-semibold">No layers found yet</p>

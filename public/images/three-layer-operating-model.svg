@@ -1,0 +1,33 @@
+<svg width="100%" viewBox="0 0 680 440" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="rgb(115,114,108)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<g>
+<rect x="50" y="40" width="580" height="85" rx="8" stroke-width="0.5" style="fill:rgb(238, 237, 254);stroke:rgb(83, 74, 183);stroke-width:0.5px;"/>
+<text x="340" y="70" text-anchor="middle" dominant-baseline="central" style="fill:rgb(60, 52, 137);stroke:none;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Operating system</text>
+<text x="340" y="93" text-anchor="middle" style="fill:rgb(83, 74, 183);stroke:none;font-size:12px;font-weight:400;text-anchor:middle;">Metrics, decision rights, and execution routines</text>
+</g>
+
+<line x1="325" y1="128" x2="325" y2="172" marker-end="url(#arrow)" style="stroke:rgb(115, 114, 108);stroke-width:1.5px;fill:none;"/>
+<line x1="355" y1="172" x2="355" y2="128" marker-end="url(#arrow)" style="stroke:rgb(115, 114, 108);stroke-width:1.5px;fill:none;"/>
+
+<g>
+<rect x="50" y="175" width="580" height="85" rx="8" stroke-width="0.5" style="fill:rgb(225, 245, 238);stroke:rgb(15, 110, 86);stroke-width:0.5px;"/>
+<text x="340" y="205" text-anchor="middle" dominant-baseline="central" style="fill:rgb(8, 80, 65);stroke:none;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Cash &amp; forecasting</text>
+<text x="340" y="228" text-anchor="middle" style="fill:rgb(15, 110, 86);stroke:none;font-size:12px;font-weight:400;text-anchor:middle;">Driver-based forecasts and cash visibility</text>
+</g>
+
+<line x1="325" y1="263" x2="325" y2="307" marker-end="url(#arrow)" style="stroke:rgb(115, 114, 108);stroke-width:1.5px;fill:none;"/>
+<line x1="355" y1="307" x2="355" y2="263" marker-end="url(#arrow)" style="stroke:rgb(115, 114, 108);stroke-width:1.5px;fill:none;"/>
+
+<g>
+<rect x="50" y="310" width="580" height="85" rx="8" stroke-width="0.5" style="fill:rgb(250, 236, 231);stroke:rgb(153, 60, 29);stroke-width:0.5px;"/>
+<text x="340" y="340" text-anchor="middle" dominant-baseline="central" style="fill:rgb(113, 43, 19);stroke:none;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Leadership cadence</text>
+<text x="340" y="363" text-anchor="middle" style="fill:rgb(153, 60, 29);stroke:none;font-size:12px;font-weight:400;text-anchor:middle;">Weekly rhythm, accountability, and decision closure</text>
+</g>
+
+<text x="340" y="418" text-anchor="middle" style="fill:rgb(61, 61, 58);stroke:none;font-size:12px;font-weight:400;text-anchor:middle;">When one layer weakens, control erodes. When all three align, execution holds.</text>
+</svg>

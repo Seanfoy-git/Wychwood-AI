@@ -1,0 +1,39 @@
+<svg width="100%" viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+<path d="M2 1L8 5L2 9" fill="none" stroke="rgb(115,114,108)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+</defs>
+
+<g>
+<rect x="140" y="40" width="400" height="60" rx="8" style="fill:rgb(225, 245, 238);stroke:rgb(15, 110, 86);stroke-width:0.5px;"/>
+<text x="340" y="62" text-anchor="middle" dominant-baseline="central" style="fill:rgb(8, 80, 65);stroke:none;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Operational drivers</text>
+<text x="340" y="82" text-anchor="middle" style="fill:rgb(15, 110, 86);stroke:none;font-size:12px;font-weight:400;text-anchor:middle;">Conversion, sales cycle, churn, headcount costs</text>
+</g>
+
+<line x1="340" y1="103" x2="340" y2="133" marker-end="url(#arrow)" style="stroke:rgb(115, 114, 108);stroke-width:1.5px;fill:none;"/>
+
+<g>
+<rect x="140" y="136" width="400" height="60" rx="8" style="fill:rgb(225, 245, 238);stroke:rgb(15, 110, 86);stroke-width:0.5px;"/>
+<text x="340" y="158" text-anchor="middle" dominant-baseline="central" style="fill:rgb(8, 80, 65);stroke:none;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Revenue build</text>
+<text x="340" y="178" text-anchor="middle" style="fill:rgb(15, 110, 86);stroke:none;font-size:12px;font-weight:400;text-anchor:middle;">Forward model built from driver assumptions</text>
+</g>
+
+<line x1="340" y1="199" x2="340" y2="229" marker-end="url(#arrow)" style="stroke:rgb(115, 114, 108);stroke-width:1.5px;fill:none;"/>
+
+<g>
+<rect x="140" y="232" width="400" height="60" rx="8" style="fill:rgb(225, 245, 238);stroke:rgb(15, 110, 86);stroke-width:0.5px;"/>
+<text x="340" y="254" text-anchor="middle" dominant-baseline="central" style="fill:rgb(8, 80, 65);stroke:none;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Cash translation</text>
+<text x="340" y="274" text-anchor="middle" style="fill:rgb(15, 110, 86);stroke:none;font-size:12px;font-weight:400;text-anchor:middle;">Timing of cash receipts and payments</text>
+</g>
+
+<line x1="340" y1="295" x2="340" y2="325" marker-end="url(#arrow)" style="stroke:rgb(115, 114, 108);stroke-width:1.5px;fill:none;"/>
+
+<g>
+<rect x="140" y="328" width="400" height="60" rx="8" style="fill:rgb(250, 238, 218);stroke:rgb(133, 79, 11);stroke-width:0.5px;"/>
+<text x="340" y="350" text-anchor="middle" dominant-baseline="central" style="fill:rgb(99, 56, 6);stroke:none;font-size:14px;font-weight:500;text-anchor:middle;dominant-baseline:central">Trigger points</text>
+<text x="340" y="370" text-anchor="middle" style="fill:rgb(133, 79, 11);stroke:none;font-size:12px;font-weight:400;text-anchor:middle;">Pre-agreed thresholds that activate a response</text>
+</g>
+
+<text x="340" y="415" text-anchor="middle" style="fill:rgb(61, 61, 58);stroke:none;font-size:12px;font-weight:400;text-anchor:middle;">When a driver assumption changes, the cash impact is visible immediately</text>
+</svg>
