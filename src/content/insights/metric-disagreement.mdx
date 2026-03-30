@@ -1,0 +1,125 @@
+---
+title: "When everyone in the room has a different number"
+description: "Metric disagreement is not a data problem. It is a definitions problem — and it compounds quietly until it becomes a crisis."
+publishDate: 2026-04-30
+tags: ["metrics", "operating system", "definitions", "scaling"]
+draft: false
+---
+
+## The pattern
+
+Ask five people at a scaling company for last month's revenue.
+
+If you get five different answers, you do not have a data problem. You have a definitions problem. Nobody ever agreed on what "revenue" means in this business — gross or net, recognised or collected, including or excluding refunds, booked or delivered.
+
+This is one of the most common and most damaging operating problems in growth-stage companies. And it almost always goes unnamed until it matters.
+
+## How it develops
+
+The problem does not arrive suddenly. It accumulates in layers.
+
+In the earliest stage of a business, the founding team shares an implicit model of how the company works. Definitions are informal but consistent — everyone is in the same room, working from the same mental model. Revenue means what the founder thinks it means, because the founder is the operating system.
+
+Then the company scales. New functions are added. A finance team builds its own reporting. Sales creates a CRM with its own pipeline definitions. Operations tracks delivery against its own metrics. Each function develops its own version of the truth — not through negligence, but because nobody ever created a shared layer that sits above all of them.
+
+The result is a business where every function is technically correct and collectively inconsistent. Sales is reporting on contracted value. Finance is reporting on recognised revenue. Operations is reporting on delivered orders. The CEO is quoting a blended number from memory. They are all measuring something real. None of them are measuring the same thing.
+
+**This is not a data quality problem. It is an absence of operational architecture.**
+
+## The metrics that break first
+
+Not all metrics are equally vulnerable. In practice, certain metrics consistently become the first sources of disagreement in scaling companies.
+
+**Revenue** is the most common. The definition seems obvious until it matters: does it include tax? Refunds? Partially completed orders? Revenue recognised on dispatch or on delivery? Contracted but not yet billed? Each of these choices produces a different number — and in a business processing high volumes, the differences are not rounding errors.
+
+**Gross margin** follows closely. The calculation depends on what is classified as cost of goods sold versus operating expense. Different stakeholders make different calls, legitimately, based on different purposes. The investor wants a contribution margin view. The operations team wants a fully-loaded cost view. Neither is wrong. But if nobody has defined which view is canonical, margin becomes a negotiation rather than a measurement.
+
+**Pipeline and forecast** are consistently the most politically charged. Sales and finance almost always have different views of the same pipeline — because they apply different definitions of what qualifies as a real opportunity, different probability weightings, and different timing assumptions. The gap between those views is where missed targets are born.
+
+**Churn and retention** carry similar risk. Monthly churn, annual churn, gross churn, net revenue retention — each tells a different story. Companies that have not defined which metric is the operating standard will find different functions reporting very different pictures of the same customer base.
+
+## What disagreement actually costs
+
+The costs of metric disagreement are real but largely invisible — which is why the problem persists.
+
+**Leadership time.** The most direct cost is the time spent in meetings re-litigating what the scoreboard says rather than acting on it. A leadership team that spends the first twenty minutes of every operating review reconciling numbers is not running a review — it is running an audit. That time compounds across every meeting, every week.
+
+**Decision quality.** Decisions made on inconsistent data are systematically worse than decisions made on agreed data — not because the people making them are less capable, but because they are working from different operating realities. A pricing decision made against one margin definition will produce a different outcome than the same decision made against a different definition.
+
+**Investor and board credibility.** Boards and investors notice when the numbers in a board pack cannot be reconciled across slides. It raises questions about operational control that take far longer to answer than they would have taken to prevent.
+
+**Forecasting accuracy.** A forecast is only as reliable as the definitions underneath it. If the inputs to a forecast are inconsistently defined, the forecast inherits that inconsistency. Variance analysis becomes impossible because there is no stable baseline to measure against.
+
+**AI and automation readiness.** This is the cost that is increasingly consequential. AI systems require consistent metric definitions, stable entity models, and reliable source-of-truth systems. A business that has not resolved its definitions problem cannot reliably deploy automation or AI — because the systems it deploys will inherit the same inconsistency that human teams are navigating. AI does not resolve ambiguity. It amplifies it.
+
+## The fix: what must be defined
+
+Getting metrics to agree does not require a data warehouse, a data team, or a six-month analytics project. It requires decisions — made explicitly, written down, and maintained.
+
+A minimal metric definition contains four things.
+
+**The calculation.** Exactly how the number is produced. Not a description — a formula. Revenue = sum of invoice line amounts (excluding VAT, excluding credit notes) where invoice status = paid. This level of specificity feels pedantic until the first time two systems produce different numbers and everyone understands immediately which one is right.
+
+**The inclusions and exclusions.** Every metric has edge cases. Refunds. Partial deliveries. Trial periods. Intercompany transactions. Each edge case that is not explicitly addressed becomes a source of disagreement. A proper definition lists the cases that exist in this business and states how each is treated.
+
+**The source of truth.** One system is authoritative. Not the most recent system, not the system that produces the most favourable number — the system that has been designated as canonical. When other systems disagree with it, the canonical system wins. This decision, made once and written down, eliminates an entire category of recurring dispute.
+
+**The owner.** A named individual — not a team, not a function — who is accountable for the definition, monitors its application, and resolves conflicts when they appear. Without a named owner, definitions drift the moment the person who created them moves on or the business changes.
+
+## What a metric definition looks like in practice
+
+Most companies have never written down a metric definition. The concept can feel abstract. Here is what a minimal definition for monthly recurring revenue looks like in practice:
+
+---
+
+**Metric:** Monthly Recurring Revenue (MRR)
+
+**Definition:** The normalised monthly value of all active subscription contracts at the end of the measurement period.
+
+**Calculation:** Sum of (annual contract value ÷ 12) for all contracts where status = Active as of the last calendar day of the month.
+
+**Inclusions:** All paid subscription tiers. Contracts in their first billing month. Contracts on payment plans.
+
+**Exclusions:** One-time setup fees. Professional services revenue. Contracts in trial status. Contracts paused at customer request.
+
+**Source of truth:** CRM (Salesforce). Finance system (Xero) is reconciled against this monthly. Where they differ, the CRM figure is used and the discrepancy is investigated.
+
+**Owner:** Head of Finance. Reviewed and confirmed monthly before board reporting.
+
+---
+
+This definition took approximately thirty minutes to write and will save hundreds of hours of reconciliation. More importantly, it means that every decision made using MRR — pricing, capacity planning, investor reporting, forecasting — is made against the same number.
+
+## The operational context layer
+
+A business that has done this work for all of its critical metrics has built what is sometimes called an operational context layer — the structured definition of how the business actually works.
+
+This layer includes:
+
+- The core entities in the business (customer, product, order, subscription) and how they are defined
+- The critical metrics and their precise definitions
+- The source-of-truth mapping across systems
+- The ownership structure for maintaining definitions
+- The decision rules that follow from specific metric thresholds
+
+This is not a technology project. It is an operating discipline — and it is the foundation on which everything else in the operating model is built. Dashboards, forecasts, board reporting, and AI initiatives all depend on this layer being in place.
+
+Most scaling companies have fragments of it, built informally over time. Very few have built it deliberately as a structured system.
+
+## The diagnostic
+
+Three questions surface the definitions gap quickly:
+
+1. Can five people across finance, sales, and operations give you the same revenue number for last month — without checking with each other first?
+2. Do your critical metrics have written definitions, with named owners and a declared source of truth?
+3. When two systems produce different numbers for the same metric, is there a clear and agreed answer for which one is right?
+
+If any of these cannot be answered cleanly, the operating model has a definitions gap — and every forecast, every dashboard, and every operating decision built on top of it is inheriting that gap.
+
+## Why this matters before anything else
+
+Metric clarity is a prerequisite, not an optimisation. Before forecasting can be trusted, before dashboards can guide decisions, before AI or automation can be deployed reliably — the business needs shared definitions.
+
+This is what an [operating system for a scaling company](/frameworks/operating-system/) is built on. Not technology. Not dashboards. The structured layer of definitions, ownership, and source-of-truth mapping that makes everything built on top of it reliable.
+
+Without it, every layer inherits the same ambiguity. With it, execution becomes something that can actually be steered.
