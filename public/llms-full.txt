@@ -63,15 +63,30 @@ Weekly rhythm, accountability loops, and leadership team performance systems. Tu
 Insight index:
 /insights/
 
-### Execution Discipline: The Missing Operating Layer
-/insights/execution-discipline/
+### Why Every Important Decision Still Lands on Your Desk
+/insights/founder-bottleneck/
 
-Why scaling companies fail due to lack of operational clarity, and how execution discipline restores control.
+The founder bottleneck is not a time management problem — it is a decision rights problem. Explains why decision authority fails to distribute as companies scale, and what a decision rights framework actually requires.
+
+### Q2 Is Where Plans Go to Die
+/insights/q2-plans-die/
+
+Why Q1 energy dissipates by Q2, the specific cadence failure modes that cause it, and how a working execution cadence prevents Q2 fragmentation.
+
+### When Everyone in the Room Has a Different Number
+/insights/metric-disagreement/
+
+Metric disagreement is a definitions problem, not a data problem. Covers what must be defined for each critical metric and what a working metric definition looks like in practice.
 
 ### Why AI Initiatives Fail
 /insights/why-ai-initiatives-fail/
 
 How operational ambiguity undermines AI projects and why clarity must precede automation.
+
+### Execution Discipline: The Missing Operating Layer
+/insights/execution-discipline/
+
+Why scaling companies fail due to lack of operational clarity, and how execution discipline restores control.
 
 ---
 

@@ -32,8 +32,11 @@ Frameworks address:
 
 ## Insights
 - /insights/
-- /insights/execution-discipline/
+- /insights/founder-bottleneck/
+- /insights/q2-plans-die/
+- /insights/metric-disagreement/
 - /insights/why-ai-initiatives-fail/
+- /insights/execution-discipline/
 
 ## Case Studies
 - /case-studies/
