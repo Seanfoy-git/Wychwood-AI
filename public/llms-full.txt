@@ -35,6 +35,26 @@ Weekly rhythm, accountability loops, and leadership team performance systems. Tu
 Insight index:
 /insights/
 
+### Why Acquisitions Destroy Value in the First 100 Days
+/insights/acquisition-first-100-days/
+
+Most acquisitions fail not because the deal was wrong, but because integration is treated as a project rather than an operating problem. Covers the three things integrations get wrong — no single operating plan, undefined decision rights, synergies tracked on a spreadsheet — and what a well-run integration requires: an IMO with real authority, a unified operating plan within two weeks, and synergies owned by named people with delivery dates.
+
+### Premature Headcount Is an Operational Tax
+/insights/premature-headcount/
+
+Hiring before the operating model is ready adds a fixed cost burden and a complexity burden that compounds as the business grows. Covers why headcount decisions are different from other operating decisions, the three sequencing mistakes (hiring to solve an undefined problem, hiring ahead of unit economics, hiring before the operating model can absorb the headcount), and what sequenced hiring looks like in practice.
+
+### If Your Board Pack Takes Two Weeks, Your Data Is Broken
+/insights/board-pack-diagnostic/
+
+Board preparation time is a diagnostic of the operating model. Two-week board prep reveals that metrics are not owned, there is no canonical source of truth, and the operating cadence is event-driven rather than continuous. Covers what fast board prep actually requires: a live operating dashboard, owned and defined metrics, and variance commentary that emerges from the weekly cadence rather than being written fresh for the board.
+
+### What Founders Get Wrong About Cash After a Raise
+/insights/cash-after-raise/
+
+Closing a round is not the same as having cash visibility. Covers the confusion between capital management and cash management, the three mistakes that appear after every raise (headcount added before stress-testing, forecast built on targets not drivers, no early warning system), and what cash discipline actually requires: a 13-week cash flow view, a driver-based forecast, and defined trigger points.
+
 ### What Breaks When You Open Your Second Location
 /insights/multi-site-expansion/
 

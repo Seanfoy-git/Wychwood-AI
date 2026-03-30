@@ -21,6 +21,10 @@ Frameworks address:
 
 ## Insights
 - /insights/
+- /insights/acquisition-first-100-days/
+- /insights/premature-headcount/
+- /insights/board-pack-diagnostic/
+- /insights/cash-after-raise/
 - /insights/multi-site-expansion/
 - /insights/founder-bottleneck/
 - /insights/q2-plans-die/
