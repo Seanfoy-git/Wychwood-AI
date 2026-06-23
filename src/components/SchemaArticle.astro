@@ -27,7 +27,7 @@ const data = {
   mainEntityOfPage: new URL(urlPath, SITE.url).toString(),
   ...(datePublished ? { datePublished: datePublished.toISOString() } : {}),
   ...(dateModified ? { dateModified: dateModified.toISOString() } : {}),
-  author: { "@type": "Organization", name: authorName },
+  author: { "@type": "Person", name: authorName },
   publisher: { "@type": "Organization", name: SITE.name },
 };
 ---

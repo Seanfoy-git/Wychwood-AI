@@ -1,0 +1,95 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [{ "type": "host", "value": "www.wychwood-partners.com" }],
+      "destination": "https://wychwood-partners.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/concepts/",
+      "destination": "/frameworks/",
+      "permanent": true
+    },
+    {
+      "source": "/concepts/operational-context-layer",
+      "destination": "/frameworks/operating-system/",
+      "permanent": true
+    },
+    {
+      "source": "/leadership-cadence-development/",
+      "destination": "/services/leadership-cadence/",
+      "permanent": true
+    },
+    {
+      "source": "/operational-systems-implementation/",
+      "destination": "/services/operational-systems/",
+      "permanent": true
+    },
+    {
+      "source": "/forecasting-frameworks/",
+      "destination": "/services/forecasting-frameworks/",
+      "permanent": true
+    },
+    {
+      "source": "/terms-and-conditions/",
+      "destination": "/privacy/",
+      "permanent": true
+    },
+    {
+      "source": "/about-2/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/",
+      "destination": "/insights/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-for-fractional-coo-services/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/services-engagement-models/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/success-stories/",
+      "destination": "/case-studies/",
+      "permanent": true
+    },
+    {
+      "source": "/operational-breakthrough-program/",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/leadership-cadence-development//",
+      "destination": "/services/leadership-cadence/",
+      "permanent": true
+    },
+    {
+      "source": "/category/operations-strategy/",
+      "destination": "/insights/",
+      "permanent": true
+    },
+    {
+      "source": "/tag/startups/",
+      "destination": "/insights/",
+      "permanent": true
+    },
+    {
+      "source": "/concepts",
+      "destination": "/frameworks/",
+      "permanent": true
+    },
+    {
+      "source": "/frameworks/operating-system",
+      "destination": "/frameworks/operating-system/",
+      "permanent": true
+    }
+  ]
+}

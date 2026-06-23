@@ -1,11 +1,22 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import SchemaOrg from '../../components/SchemaOrg.astro';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Operational Systems Implementation",
+  provider: { "@type": "Organization", name: "Wychwood Partners" },
+  description: "Design and implement the operational infrastructure your scaling company needs — metrics, ownership, decision rules, and execution routines.",
+  url: "https://wychwood-partners.com/services/operational-systems/",
+};
 ---
 
 <BaseLayout
   title="Operating System Architecture — Wychwood Partners"
-  description="Design and install a capital-disciplined operating system for growth-stage and private equity-backed businesses."
+  description="Design and implement the operational infrastructure your scaling company needs — metrics, ownership, decision rules, and execution routines."
 >
+  <SchemaOrg schema={serviceSchema} />
   <main class="shell py-14">
     <a
       href="/services/"
@@ -72,6 +83,14 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         >
       </div>
     </div>
+
+    <nav aria-label="Related reading" class="mt-16 border-t border-[rgb(var(--border))] pt-8">
+      <h2 class="text-sm font-semibold uppercase tracking-wide text-[rgb(var(--text-muted))]">Related reading</h2>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class="text-[rgb(var(--text))] hover:underline" href="/insights/why-ai-initiatives-fail/">Why AI initiatives fail</a></li>
+        <li><a class="text-[rgb(var(--text))] hover:underline" href="/insights/execution-discipline/">Execution discipline</a></li>
+      </ul>
+    </nav>
 
     <section class="mt-16 border-t border-[rgb(var(--border))] pt-10">
       <h2 class="text-2xl font-semibold tracking-tight">Related frameworks & case studies</h2>

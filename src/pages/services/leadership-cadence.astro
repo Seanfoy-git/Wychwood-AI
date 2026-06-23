@@ -1,7 +1,18 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import SchemaOrg from '../../components/SchemaOrg.astro';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Leadership Cadence Development",
+  provider: { "@type": "Organization", name: "Wychwood Partners" },
+  description: "Build a leadership rhythm that keeps your team aligned, accountable, and moving fast. Weekly cadence design for growth-stage companies.",
+  url: "https://wychwood-partners.com/services/leadership-cadence/",
+};
 ---
-<BaseLayout title="Leadership Cadence — Wychwood Partners" description="Weekly execution rhythm, accountability loops, and leadership team performance.">
+<BaseLayout title="Leadership Cadence — Wychwood Partners" description="Build a leadership rhythm that keeps your team aligned, accountable, and moving fast. Weekly cadence design for growth-stage companies.">
+  <SchemaOrg schema={serviceSchema} />
   <main class="shell py-14">
     <a
       href="/services/"
@@ -43,6 +54,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         </ul>
       </div>
     </div>
+
+    <nav aria-label="Related reading" class="mt-16 border-t border-[rgb(var(--border))] pt-8">
+      <h2 class="text-sm font-semibold uppercase tracking-wide text-[rgb(var(--text-muted))]">Related reading</h2>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class="text-[rgb(var(--text))] hover:underline" href="/frameworks/leadership-cadence/">Leadership Cadence framework</a></li>
+        <li><a class="text-[rgb(var(--text))] hover:underline" href="/insights/founder-bottleneck/">The founder bottleneck</a></li>
+        <li><a class="text-[rgb(var(--text))] hover:underline" href="/insights/premature-headcount/">Premature headcount</a></li>
+      </ul>
+    </nav>
 
     <div class="mt-12 card p-8">
       <p class="text-lg font-semibold">Want to install a cadence that sticks?</p>

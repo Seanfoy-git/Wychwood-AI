@@ -1,7 +1,18 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import SchemaOrg from '../../components/SchemaOrg.astro';
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Forecasting Frameworks",
+  provider: { "@type": "Organization", name: "Wychwood Partners" },
+  description: "Build a forecasting system that gives you reliable visibility on cash, revenue, and headcount — so decisions are made on data, not gut feel.",
+  url: "https://wychwood-partners.com/services/forecasting-frameworks/",
+};
 ---
-<BaseLayout title="Forecasting Frameworks — Wychwood Partners" description="Driver-based forecasting and scenario planning for confident decisions.">
+<BaseLayout title="Forecasting Frameworks — Wychwood Partners" description="Build a forecasting system that gives you reliable visibility on cash, revenue, and headcount — so decisions are made on data, not gut feel.">
+  <SchemaOrg schema={serviceSchema} />
   <main class="shell py-14">
     <a
       href="/services/"
@@ -43,6 +54,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         </ul>
       </div>
     </div>
+
+    <nav aria-label="Related reading" class="mt-16 border-t border-[rgb(var(--border))] pt-8">
+      <h2 class="text-sm font-semibold uppercase tracking-wide text-[rgb(var(--text-muted))]">Related reading</h2>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class="text-[rgb(var(--text))] hover:underline" href="/frameworks/forecasting-discipline/">Forecasting Discipline framework</a></li>
+        <li><a class="text-[rgb(var(--text))] hover:underline" href="/insights/cash-after-raise/">Cash after a raise</a></li>
+        <li><a class="text-[rgb(var(--text))] hover:underline" href="/insights/board-pack-diagnostic/">Board pack diagnostic</a></li>
+      </ul>
+    </nav>
 
     <div class="mt-12 card p-8">
       <p class="text-lg font-semibold">Want a forecasting reset?</p>
