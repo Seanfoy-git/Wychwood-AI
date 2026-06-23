@@ -1,0 +1,176 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SchemaOrg from '../components/SchemaOrg.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is a fractional COO?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A fractional COO is an experienced chief operating officer who works with a company part-time — typically one to three days a week — instead of as a full-time hire. They install the operating system the business needs (metrics, decision rights, forecasting discipline, and leadership cadence) and lead execution, giving a scaling company senior operating leadership without the cost or commitment of a permanent executive.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Do I need a fractional COO?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "You likely need a fractional COO if the business is growing but execution is becoming unpredictable: decisions keep escalating to the founder, teams disagree on the numbers, margins drift as revenue grows, plans fragment after Q1, or the leadership team is busy without making consistent progress. These are operating-system problems, and a fractional COO installs the structure to fix them — without the cost of a full-time hire.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "When should a company hire a fractional COO?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Most often when growth, investor expectations, and operating complexity begin evolving faster than the company's systems, reporting, and leadership rhythm can comfortably absorb — for example during rapid scaling, after a funding round, through private equity ownership, during post-acquisition integration, or while expanding to new sites or markets.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the difference between a fractional, interim, and full-time COO?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "A fractional COO works part-time on an ongoing basis, usually one to three days a week. An interim COO works full-time for a defined period, often to cover a gap or lead a specific transition. A full-time COO is a permanent executive hire. Fractional and interim support let a company access senior operating leadership immediately and flexibly, which suits businesses that need the capability before they need — or can justify — a permanent role.",
+      },
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title="Do You Need a Fractional COO? — Wychwood Partners"
+  description="A fractional COO gives scaling companies senior operating leadership part-time. Here is what one does, the signs you need one, and when fractional, interim, or full-time support makes sense."
+  canonicalPath="/fractional-coo/"
+>
+  <SchemaOrg schema={faqSchema} />
+
+  <main class="shell section">
+    <div class="max-w-3xl">
+      <h1>Do you need a fractional COO?</h1>
+
+      <p class="mt-5 text-lg leading-relaxed text-[rgb(var(--text-muted))]">
+        A fractional COO gives a scaling company senior operating leadership part-time — typically one to three days a week — installing the operating system the business needs and leading execution, without the cost or commitment of a full-time hire.
+      </p>
+      <p class="mt-4 text-[rgb(var(--text-muted))]">
+        The short answer: you need one when growth is outpacing the systems, reporting, and leadership rhythm that hold the business together. Below are the signals, what the role actually does, and how fractional support compares to interim and full-time.
+      </p>
+    </div>
+
+    <!-- Signs -->
+    <section class="mt-14">
+      <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Signs you need a fractional COO</h2>
+      <p class="mt-3 max-w-3xl text-[rgb(var(--text-muted))]">
+        Most of these are operating-system problems, not strategy problems. If several are familiar, the business has outgrown founder-led execution.
+      </p>
+
+      <div class="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div class="card p-5">
+          <p class="text-sm font-semibold">Decisions bottleneck at the founder</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">Important calls still escalate upward because ownership and decision rights are unclear.</p>
+        </div>
+        <div class="card p-5">
+          <p class="text-sm font-semibold">The numbers do not agree</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">Revenue, margin, and pipeline change depending on who you ask and which system you check.</p>
+        </div>
+        <div class="card p-5">
+          <p class="text-sm font-semibold">Revenue grows but margins drift</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">Operational visibility weakens as the business scales, and surprises arrive late.</p>
+        </div>
+        <div class="card p-5">
+          <p class="text-sm font-semibold">Plans fragment after Q1</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">Priorities drift without a formal decision, and the year ends nothing like the plan.</p>
+        </div>
+        <div class="card p-5">
+          <p class="text-sm font-semibold">Cash and forecasting feel uncertain</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">The forecast is built from targets rather than drivers, so it cannot explain where the cash moves.</p>
+        </div>
+        <div class="card p-5">
+          <p class="text-sm font-semibold">Investors want tighter execution</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">A board or PE owner is asking for control and predictability the current operating model cannot yet provide.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What a fractional COO does -->
+    <section class="mt-16 border-t border-[rgb(var(--border))] pt-12">
+      <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">What a fractional COO actually does</h2>
+      <p class="mt-3 max-w-3xl text-[rgb(var(--text-muted))]">
+        The work is installing an operating system — the structure that lets a company make credible decisions with imperfect information and adapt without losing control. In practice, across three operating layers:
+      </p>
+
+      <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <a href="/services/operational-systems/" class="group card p-6 transition hover:shadow-md">
+          <p class="text-sm font-semibold">Operational systems</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">Operating model, metrics, roles, decision rights, and execution routines.</p>
+          <p class="mt-4 text-sm font-medium text-[rgb(var(--text))] group-hover:underline">Learn more →</p>
+        </a>
+        <a href="/services/forecasting-frameworks/" class="group card p-6 transition hover:shadow-md">
+          <p class="text-sm font-semibold">Capital &amp; forecasting</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">Driver-based forecasting, pipeline confidence, and scenario planning.</p>
+          <p class="mt-4 text-sm font-medium text-[rgb(var(--text))] group-hover:underline">Learn more →</p>
+        </a>
+        <a href="/services/leadership-cadence/" class="group card p-6 transition hover:shadow-md">
+          <p class="text-sm font-semibold">Leadership cadence</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">Weekly rhythm, accountability loops, and leadership team structure.</p>
+          <p class="mt-4 text-sm font-medium text-[rgb(var(--text))] group-hover:underline">Learn more →</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Fractional vs interim vs full-time -->
+    <section class="mt-16 border-t border-[rgb(var(--border))] pt-12">
+      <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">Fractional, interim, or full-time?</h2>
+      <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+        <div class="card p-6">
+          <p class="text-sm font-semibold">Fractional</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">Part-time and ongoing, usually one to three days a week. Best when you need senior operating leadership and structure, but not a full-time seat yet.</p>
+        </div>
+        <div class="card p-6">
+          <p class="text-sm font-semibold">Interim</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">Full-time for a defined period. Best for covering a gap or leading a specific transition — integration, turnaround, or IPO preparation.</p>
+        </div>
+        <div class="card p-6">
+          <p class="text-sm font-semibold">Full-time</p>
+          <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">A permanent executive hire. Right once the operating model is established and the role is clearly defined and affordable at scale.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- When you don't -->
+    <section class="mt-16 border-t border-[rgb(var(--border))] pt-12">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl font-semibold tracking-tight md:text-3xl">When you probably do not need one yet</h2>
+        <p class="mt-3 text-[rgb(var(--text-muted))]">
+          If the business is still small enough that the founding team shares one operating picture in real time, formal operating structure can add overhead without benefit. A fractional COO earns its place when complexity — more people, functions, sites, or investor scrutiny — starts to outrun the informal way the company has run so far.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="mt-12 card p-8">
+      <p class="text-lg font-semibold">Not sure which you need?</p>
+      <p class="mt-2 text-sm text-[rgb(var(--text-muted))]">
+        A short call is usually the fastest way to work out whether fractional, interim, or full-time support fits — and whether there is a fit at all. If there isn't, I'll say so.
+      </p>
+      <div class="mt-5 flex flex-col gap-3 sm:flex-row">
+        <a href="/contact" class="inline-flex items-center justify-center rounded-[var(--radius-lg)] bg-[rgb(var(--brand-anchor))] px-5 py-3 text-sm font-medium text-white transition hover:opacity-95">Book a call</a>
+        <a href="/services" class="inline-flex items-center justify-center rounded-[var(--radius-lg)] border border-[rgb(var(--border))] bg-[rgb(var(--surface-elevated))] px-5 py-3 text-sm font-medium text-[rgb(var(--text))] transition hover:bg-[rgb(var(--surface-subtle))]">See how I work</a>
+      </div>
+    </div>
+
+    <!-- Related reading -->
+    <nav aria-label="Related reading" class="mt-16 border-t border-[rgb(var(--border))] pt-8">
+      <h2 class="text-sm font-semibold uppercase tracking-wide text-[rgb(var(--text-muted))]">Related reading</h2>
+      <ul class="mt-4 space-y-2 text-sm">
+        <li><a class="text-[rgb(var(--text))] hover:underline" href="/frameworks/operating-system/">The operating system a fractional COO installs</a></li>
+        <li><a class="text-[rgb(var(--text))] hover:underline" href="/insights/founder-bottleneck/">When every decision still lands on your desk</a></li>
+        <li><a class="text-[rgb(var(--text))] hover:underline" href="/insights/learning-without-drift/">Learning without drift: deciding with incomplete information</a></li>
+      </ul>
+    </nav>
+  </main>
+</BaseLayout>
