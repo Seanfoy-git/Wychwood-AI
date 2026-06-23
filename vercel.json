@@ -1,12 +1,6 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.wychwood-partners.com" }],
-      "destination": "https://wychwood-partners.com/:path*",
-      "permanent": true
-    },
-    {
       "source": "/concepts/",
       "destination": "/frameworks/",
       "permanent": true
